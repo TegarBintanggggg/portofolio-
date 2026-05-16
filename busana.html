@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Keahlian Busana - GPT SCHOOL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Hero Section dengan Overlay Rose Gold/Dusty Purple */
+        .hero-section {
+            background: linear-gradient(rgba(108, 92, 231, 0.75), rgba(214, 162, 232, 0.75)), 
+                        url('https://images.pexels.com/photos/3738088/pexels-photo-3738088.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        /* Styling Card */
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        /* Warna Khusus Tema Busana */
+        .bg-soft-purple { background-color: #f3e5f5; color: #9c27b0; }
+        .bg-soft-pink { background-color: #fce4ec; color: #e91e63; }
+        .btn-primary { background-color: #6c5ce7; border-color: #6c5ce7; }
+        .btn-primary:hover { background-color: #a29bfe; border-color: #a29bfe; }
+        .progress-bar { background-color: #e91e63; }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #adb5bd;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="logosklh.png" 
+        alt="Logo" width="40" height="40" class="me-2">GPT SCHOOL
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#bagian-visi">Visi Misi</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#bagian-tabel">Data Siswa</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Jurusan</a>
+         <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pplg.html">PPLG</a></li>
+            <li><a class="dropdown-item" href="tjkt.html">TJKT</a></li>
+            <li><a class="dropdown-item" href="kuliner.html">KULINER</a></li>
+            <li><a class="dropdown-item" href="busana.html">BUSANA</a></li>
+            <li><a class="dropdown-item" href="tsm.html">TSM</a></li>
+            <li><a class="dropdown-item" href="index.html#jurusan">Lihat Semua</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-section text-center">
+    <div class="container mt-4">
+        <h1 class="display-4 fw-bold">DESAIN DAN PRODUKSI BUSANA</h1>
+        <p class="lead">Mengekspresikan kreativitas melalui desain tekstil, pola pakaian, dan tren fashion modern.</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-lg-8">
+            <div class="card p-4 h-100">
+                <h2 class="fw-bold mb-4">Wujudkan Karya Seni dalam Balutan Kain</h2>
+                <p class="text-secondary mb-5">Program keahlian Busana membekali siswa dengan kompetensi desain ilustrasi (fashion sketching), pembuatan pola manual maupun digital, teknik menjahit tingkat lanjut, hingga manajemen bisnis fashion dan branding.</p>
+                
+                <div class="row mb-5">
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box bg-soft-purple me-3">
+                                <i class="bi bi-pencil-square fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Fashion Designer</h6>
+                                <small class="text-muted">Sketsa & konsep kreativitas.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box bg-soft-pink me-3">
+                                <i class="bi bi-scissors fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Pattern Making</h6>
+                                <small class="text-muted">Konstruksi pola & teknik jahit.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="fw-bold mb-3">Fasilitas Unggulan</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Laboratorium Menjahit & Industri <span class="badge bg-secondary rounded-pill">Mesin High Speed</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Studio Desain & Ilustrasi <span class="badge bg-danger rounded-pill">Digital Drawing</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Fashion Show Hall <span class="badge bg-dark rounded-pill">Catwalk Area</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card mb-4 overflow-hidden">
+                <div class="bg-dark text-white p-3 text-center fw-bold">Status Pendaftaran</div>
+                <div class="p-4">
+                    <div class="d-flex justify-content-between mb-2">
+                        <small class="fw-bold">Kuota Terisi</small>
+                        <small class="text-muted">50%</small>
+                    </div>
+                    <div class="progress mb-4" style="height: 10px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%"></div>
+                    </div>
+                    <button class="btn btn-primary w-100 fw-bold mb-2">DAFTAR SEKARANG</button>
+                    <a href="index.html">
+                    <button class="btn btn-light w-100 text-muted btn-sm"><i class="bi bi-arrow-left"></i> Kembali</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card overflow-hidden">
+                <img src="https://images.pexels.com/photos/6358860/pexels-photo-6358860.jpeg" class="card-img-top" alt="Alumni Busana">
+                <div class="p-4">
+                    <p class="fst-italic text-secondary small">"Belajar di jurusan Busana memberikan saya keberanian untuk membangun brand fashion sendiri sesaat setelah lulus."</p>
+                    <h6 class="fw-bold mb-0">- Citra, Alumni 2022</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0 small">© 2026 GPT SCHOOL. Seluruh Hak Cipta Dilindungi.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

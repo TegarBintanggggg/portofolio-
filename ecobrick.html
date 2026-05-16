@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembuatan Meja Komputer dari Ecobrick</title>
+    <style>
+        /* Header and Navigation */
+header {
+    /* background-image: url('header-bg.jpg');  Add background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */ background-color:#c8d6c85a; /* Light green header */
+    padding: 1rem 0;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-size: cover; /* Cover the entire navbar */
+    background-position: center; /* Center the image */
+    color: rgb(84, 172, 100); /* Ensure text is readable on the background */
+    background-color: #c8d6c85a;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-brand img {
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.logo-brand h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: inherit; /* Inherit text color from navbar */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: rgb(97, 165, 90); /* Make the links white to stand out */
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ff917d;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .alat-bahan {
+            display: flex;
+            justify-content: space-around;
+        }
+        .alat, .bahan {
+            width: 45%;
+        }
+        .langkah-kerja ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        .harga-penjualan table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .harga-penjualan th, .harga-penjualan td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .harga-penjualan th {
+            background-color: #f2f2f2;
+        }
+        .info {
+            background-color: #e9f7ef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        style.css utama */
+    body {
+        background-color: #e9f0ea; /* Mirip dengan --body-bg-light */
+    }
+    .detail-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .detail-container h1 {
+        color: #73846b; 
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 32px;
+    }
+    .detail-container p {
+        margin-bottom: 15px;
+        text-align: justify;
+        line-height: 1.7;
+    }
+    /* Styling Navbar di detail.html (Meniru style.css) */
+    .navbar {
+        background-color: #7a8f7a; 
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links {
+        list-style: none;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        padding: 8px 16px;
+        background-color: #8abf8a;
+        border-radius: 8px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #7a8f7a;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+        .home-button {
+        display: block; 
+    width: 200px; 
+    margin: 15px auto 20px auto;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #a3b18a;
+    color: #1e4d1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      flex-wrap: wrap;
+      background-color: #6b8575;
+    }
+
+    .column {
+      min-width: 150px;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .column h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .column a, .column p {
+      display: block;
+      margin: 5px 0;
+      font-size: 14px;
+      color: #e6e6e6;
+      text-decoration: none;
+    }
+
+    .column a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* BAGIAN CREATED */
+    .footer-bottom {
+      margin-top: 15px;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #5d7568;
+    }
+
+    /* RESPONSIVE UNTUK HP */
+    @media (max-width: 768px) {
+      .team-section {
+        flex-wrap: wrap;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    </style>
+</head>
+<header>
+   <nav class="navbar">
+        <div class="logo-brand">
+            <img src="img/logo savanna.jpg" alt="Logo Savanna">
+            <h1>Savanna</h1>
+        </div>
+       <div class="nav-links">
+            <a href="index1.html#home" class="nav-item">Home</a>
+            <a href="index1.html#about">About</a>
+            <a href="index1.html#analysis">Analysis</a>
+            <a href="index1.html#product">Products</a>
+            <a href="index1.html#bundling">Bundling</a>
+            <a href="index1.html#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+<body>
+    <article>
+        <h1>Pembuatan Meja Komputer dari Ecobrick</h1>
+
+        <section class="section latar-belakang">
+            <h2>Latar Belakang</h2>
+            <p>Limbah plastik menjadi salah satu masalah lingkungan yang paling mengkhawatirkan saat ini. Botol plastik, kantong kresek, dan kemasan makanan yang tidak terurai selama ratusan tahun berpotensi mencemari tanah, air, dan udara. Sayangnya, tingkat kesadaran masyarakat dalam mengelola limbah plastik masih rendah.</p>
+            <p>Salah satu solusi kreatif dan ramah lingkungan yang berkembang adalah dengan membuat Ecobrick, yaitu botol plastik yang diisi padat dengan sampah plastik non-organik bersih. Ecobrick bisa digunakan sebagai bahan bangunan alternatif yang kuat, ringan, dan tahan lama.</p>
+            <p>Dengan memanfaatkan ecobrick, kita dapat menciptakan berbagai benda fungsional, salah satunya meja komputer. Proyek ini menjadi bentuk nyata dari pengolahan limbah menjadi produk yang bernilai guna dan jual, sesuai tema “Limbahmu Karyaku”.</p>
+        </section>
+
+        <section class="section tujuan">
+            <h2>Tujuan</h2>
+            <ul>
+                <li>Mengurangi limbah plastik melalui pengolahan menjadi ecobrick.</li>
+                <li>Menghasilkan produk daur ulang yang kuat, ramah lingkungan, dan fungsional.</li>
+                <li>Meningkatkan kesadaran akan pentingnya pengelolaan sampah secara kreatif dan berkelanjutan.</li>
+                <li>Menumbuhkan keterampilan dan inovasi dalam menciptakan furnitur dari bahan daur ulang.</li>
+                <li>Mengembangkan jiwa wirausaha dengan memproduksi meja komputer berbasis ecobrick yang memiliki nilai jual.</li>
+                <li>Mendorong Kreativitas dan Inovasi.</li>
+                <li>Mengurangi Kebutuhan Bahan Bangunan Konvensional.</li>
+            </ul>
+        </section>
+
+        <section class="section alat-bahan">
+            <div class="alat">
+                <h2>Alat</h2>
+                <ul>
+                    <li>Gunting atau cutter</li>
+                    <li>Tongkat kayu / besi panjang (untuk memadatkan sampah dalam botol)</li>
+                    <li>Bor / obeng (untuk menyambung bagian atas meja)</li>
+                    <li>Lem tembak atau lem bangunan</li>
+                    <li>Alat ukur (meteran, penggaris)</li>
+                    <li>Kuas (untuk mengecat (opsional))</li>
+                </ul>
+            </div>
+            <div class="bahan">
+                <h2>Bahan</h2>
+                <ul>
+                    <li>Ecobrick (± 20-30 botol plastik ukuran 330ml)</li>
+                    <li>Kardus dengan bahan kuat</li>
+                    <li>Cat atau pelapis (untuk finishing)</li>
+                    <li>Paku, sekrup, dan lem</li>
+                    <li>Kain pelapis / stiker vinyl / taplak meja (opsional untuk estetika)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section langkah-kerja">
+            <h2>Langkah Kerja</h2>
+            <ol>
+                <li><strong>Pembuatan Ecobrick:</strong> Kumpulkan botol plastik bekas (ukuran sama) lalu bersihkan dan keringkan. Potong kecil-kecil sampah plastik non-organik (kresek, bungkus makanan, sedotan, dll) setelah dipotong masukkan sampah ke dalam botol, padatkan menggunakan tongkat hingga keras dan tidak bisa ditekan dengan tangan. Tutup botol rapat, pastikan berat minimal 200–250 gram per botol agar kokoh.</li>
+                <li><strong>Membentuk Rangka Meja:</strong> Susun ecobrick secara vertikal dan horizontal sebagai kaki meja lalu gabungkan dengan lem bangunan atau diikat kuat menggunakan kabel ties/tali rafia. Buat 2 penyangga besar sebagai kaki kanan dan kiri.</li>
+                <li><strong>Pemasangan Meja:</strong> Tempelkan kardus kuat/triplek/kardus di atas ecobrick menggunakan lem dan sekrup/paku agar kuat. Pastikan permukaan rata dan kokoh.</li>
+                <li><strong>Finishing:</strong> Cat atau beri pelapis pada bagian papan atas agar menarik. Tambahkan aksen (kain pelapis, gambar, stiker) jika ingin terlihat lebih estetis.</li>
+            </ol>
+        </section>
+
+        <section class="section harga-penjualan">
+            <h2>💸 Harga Penjualan (Estimasi)</h2>
+            <div class="info">
+                <h3>Komponen</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Komponen</th>
+                            <th>Estimasi biaya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Botol plastik bekas</td>
+                            <td>Rp 0,-</td>
+                        </tr>
+                        <tr>
+                            <td>Sampah non-organik</td>
+                            <td>Rp 0,-</td>
+                        </tr>
+                        <tr>
+                            <td>Kardus bekas</td>
+                            <td>Rp 0,-</td>
+                        </tr>
+                        <tr>
+                            <td>Paku/lem</td>
+                            <td>Rp 2.000,-/biji</td>
+                        </tr>
+                        <tr>
+                            <td>Perlengkap/alat bantu</td>
+                            <td>Rp 5.000,-</td>
+                        </tr>
+                        <tr>
+                            <td>Tenaga kerja</td>
+                            <td>Rp 15.000,- hingga Rp 30.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Nama barang</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama barang</th>
+                        <th>Harga jual</th>
+                        <th>Biaya produksi</th>
+                        <th>Laba bersih</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Meja sederhana alas kardus</td>
+                        <td>Rp 70.000,-</td>
+                        <td>Rp 22.000,-</td>
+                        <td>Rp 38.000,-</td>
+                    </tr>
+                    <tr>
+                        <td>Meja sederhana dengan rak alas kardus</td>
+                        <td>Rp 100.000,-</td>
+                        <td>Rp 35.000,-</td>
+                        <td>Rp 65.000,-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+</body>
+         <div class="home-button">
+        <a href="index1.html" class="kembali-link">
+            Kembali ke Beranda
+        </a>
+    </div>
+         <footer>
+  <div class="footer-content">
+    <div class="column">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Service</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="column">
+      <h3>Extra Links</h3>
+      <a href="#">My Account</a>
+      <a href="#">My Order</a>
+      <a href="#">My Favorite</a>
+    </div>
+
+    <div class="column">
+      <h3>Location</h3>
+      <p>Tengaran</p>
+      <p>Kab. Semarang</p>
+      <p>Jawa Tengah</p>
+    </div>
+
+    <div class="column">
+      <h3>Contacts Info</h3>
+      <p><a href="https://instagram.com/aarsyfnqqvz" target="_blank">@aarsyfnqqvz</a></p>
+      <p><a href="https://instagram.com/sweetyana_404" target="_blank">@sweetyana_404</a></p>
+      <p><a href="https://instagram.com/bintangnyggh" target="_blank">@bintangnyggh</a></p>
+    </div>
+  </div>
+
+  <!-- CREATED -->
+  <div class="footer-bottom">
+    @Created By Kelompok 2 Kolaborasi
+  </div>
+
+</footer>
+
+</html>

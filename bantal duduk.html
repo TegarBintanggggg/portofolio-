@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Bantal Duduk dari Kain Perca</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-size: cover; /* Cover the entire navbar */
+    background-position: center; /* Center the image */
+    color: rgb(84, 172, 100); /* Ensure text is readable on the background */
+    background-color: #c8d6c85a;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-brand img {
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.logo-brand h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: inherit; /* Inherit text color from navbar */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: rgb(97, 165, 90); /* Make the links white to stand out */
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ff917d;
+}
+
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .alat-bahan {
+            display: flex;
+            justify-content: space-around;
+        }
+        .alat, .bahan {
+            width: 45%;
+        }
+        .langkah-kerja ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        .harga-penjualan table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .harga-penjualan th, .harga-penjualan td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .harga-penjualan th {
+            background-color: #f2f2f2;
+        }
+        .info {
+            background-color: #e9f7ef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .conclusion {
+            font-style: italic;
+            color: #777;
+        }
+        style.css utama */
+    body {
+        background-color: #e9f0ea; /* Mirip dengan --body-bg-light */
+    }
+    .detail-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .detail-container h1 {
+        color: #73846b; 
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 32px;
+    }
+    .detail-container p {
+        margin-bottom: 15px;
+        text-align: justify;
+        line-height: 1.7;
+    }
+    /* Styling Navbar di detail.html (Meniru style.css) */
+    .navbar {
+        background-color: #7a8f7a; 
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links {
+        list-style: none;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        padding: 8px 16px;
+        background-color: #8abf8a;
+        border-radius: 8px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #7a8f7a;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .home-button {
+        display: block; 
+    width: 200px; 
+    margin: 15px auto 20px auto;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #a3b18a;
+    color: #1e4d1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /
+    }
+
+    /* BAGIAN ISI TENGAH (LINK, LOKASI, INSTAGRAM) */
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      flex-wrap: wrap;
+      background-color: #6b8575;
+    }
+
+    .column {
+      min-width: 150px;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .column h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .column a, .column p {
+      display: block;
+      margin: 5px 0;
+      font-size: 14px;
+      color: #e6e6e6;
+      text-decoration: none;
+    }
+
+    .column a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* BAGIAN CREATED */
+    .footer-bottom {
+      margin-top: 15px;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #5d7568;
+    }
+
+    /* RESPONSIVE UNTUK HP */
+    @media (max-width: 768px) {
+      .team-section {
+        flex-wrap: wrap;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    </style>
+</head>
+  <header>
+    <nav class="navbar">
+        <div class="logo-brand">
+            <img src="img/logo savanna.jpg" alt="Logo Savanna">
+            <h1>Savanna</h1>
+        </div>      
+        <div class="nav-links">
+            <a href="index1.html#home" class="nav-item">Home</a>
+            <a href="index1.html#about">About</a>
+            <a href="index1.html#analysis">Analysis</a>
+            <a href="index1.html#product">Products</a>
+            <a href="index1.html#bundling">Bundling</a>
+            <a href="index1.html#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+<body>
+    <article>
+        <h1>Membuat Bantal Duduk dari Kain Perca</h1>
+
+        <section class="section latar-belakang">
+            <h2>Latar Belakang</h2>
+            <p>Di era modern ini, peningkatan aktivitas industri dan rumah tangga menghasilkan limbah dalam jumlah besar, salah satunya adalah limbah tekstil berupa kain perca. Kain perca merupakan potongan kain sisa hasil produksi garmen atau konveksi yang sering dianggap tidak bernilai dan dibuang begitu saja.</p>
+            <p>Kurangnya kesadaran masyarakat dalam mengelola limbah tekstil menyebabkan penumpukan sampah yang berdampak negatif terhadap lingkungan. Oleh karena itu, perlu adanya inovasi dalam pengolahan limbah agar tidak mencemari lingkungan, sekaligus memberikan manfaat fungsional dan estetis.</p>
+            <p>Salah satu solusi yang dapat dilakukan adalah membuat bantal duduk dari kain perca. Selain membantu mengurangi limbah tekstil, produk ini juga bermanfaat dalam kehidupan sehari-hari dan bisa menjadi peluang usaha kreatif. Proyek ini sejalan dengan semangat “Limbahmu Karyaku” yang mengajak masyarakat untuk mengubah limbah menjadi karya bernilai.</p>
+        </section>
+
+        <section class="section tujuan">
+            <h2>Tujuan</h2>
+            <ul>
+                <li>Mengurangi limbah tekstil yang berasal dari sisa kain perca agar tidak mencemari lingkungan.</li>
+                <li>Meningkatkan kesadaran masyarakat akan pentingnya pengelolaan limbah secara kreatif dan berkelanjutan.</li>
+                <li>Menciptakan produk fungsional dan estetis, yaitu bantal duduk yang bisa digunakan di rumah, sekolah, atau tempat umum.</li>
+                <li>Menumbuhkan jiwa kewirausahaan, dengan menjadikan limbah sebagai peluang usaha melalui produk daur ulang.</li>
+                <li>Mendorong kreativitas dan inovasi dalam pemanfaatan bahan bekas untuk menciptakan barang-barang berguna.</li>
+            </ul>
+        </section>
+
+        <section class="section alat-bahan">
+            <div class="alat">
+                <h2>Alat</h2>
+                <ul>
+                    <li>Gunting kain</li>
+                    <li>Jarum jahit tangan atau mesin jahit (opsional)</li>
+                    <li>Meteran atau penggaris</li>
+                    <li>Pensil kain atau kapur jahit</li>
+                    <li>Benang jahit</li>
+                    <li>Peniti atau jarum pentul</li>
+                </ul>
+            </div>
+            <div class="bahan">
+                <h2>Bahan</h2>
+                <ul>
+                    <li>Kain perca (ukuran bervariasi, tergantung desain)</li>
+                    <li>Dakron atau kapas sintetis sebagai isi bantal (bisa juga dari limbah tekstil yang lembut)</li>
+                    <li>Kain pelapis dalam (opsional, untuk memperkuat bagian dalam bantal)</li>
+                    <li>Resleting atau kancing (opsional, jika ingin sarung bantal bisa dilepas)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section langkah-kerja">
+            <h2>Langkah Kerja</h2>
+            <ol>
+                <li><strong>Persiapan Bahan:</strong> Pilih dan cuci kain perca agar bersih dan higienis, tunggu kering lalu potong kain perca dengan ukuran dan bentuk yang diinginkan (misalnya kotak 10x10 cm).</li>
+                <li><strong>Membuat Pola:</strong> Tentukan ukuran bantal duduk, misalnya 40x40 cm lalu susun kain perca menjadi pola mozaik atau patchwork sesuai keinginan.</li>
+                <li><strong>Menjahit Kain Perca:</strong> Jahit kain perca menjadi satu kesatuan berbentuk lembaran besar untuk bagian atas dan bawah bantal. Lalu tambahkan pelapis jika diperlukan.</li>
+                <li><strong>Menyusun dan Menjahit Bantal:</strong> Jahit sisi-sisi kain perca bagian atas dan bawah, sisakan sebagian sisi terbuka lalu masukkan isi bantal (dakron atau limbah tekstil yang empuk) dan jahit sisi terakhir hingga tertutup rapat.</li>
+                <li><strong>Finishing:</strong> Rapikan benang-benang sisa lalu periksa kembali kerapian dan kenyamanan bantal.</li>
+            </ol>
+        </section>
+
+        <section class="section harga-penjualan">
+            <h2>💸 Harga Penjualan (Estimasi)</h2>
+            <div class="info">
+                <h3>Komponen</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Komponen</th>
+                            <th>Estimasi biaya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kain perca/limbah kain</td>
+                            <td>Rp 0,-</td>
+                        </tr>
+                        <tr>
+                            <td>Dakron</td>
+                            <td>Rp 7.000,-/200g</td>
+                        </tr>
+                        <tr>
+                            <td>Benang jahit</td>
+                            <td>Rp 3.000,-</td>
+                        </tr>
+                        <tr>
+                            <td>Tenaga kerja</td>
+                            <td>Rp 10.000,-</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Total biaya produksi: Rp 20.000,-</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Harga Jual</h3>
+            <p>Rp 35.000 – Rp 50.000 per bantal duduk (tergantung kualitas dan desain) dengan laba ± Rp 15.000,- hingga Rp 30.000,-</p>
+        </section>
+
+        <section class="section conclusion">
+            <p>Jika dikembangkan sebagai produk kreatif, bisa dijual secara online dengan kemasan menarik dan dengan branding eco-friendly.</p>
+        </section>
+    </article>
+        <div class="home-button">
+        <a href="index1.html" class="kembali-link">
+            Kembali ke Beranda
+        </a>
+    </div>
+
+    <!-- ISI MENU INFORMASI -->
+     <footer>
+  <div class="footer-content">
+    <div class="column">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Service</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="column">
+      <h3>Extra Links</h3>
+      <a href="#">My Account</a>
+      <a href="#">My Order</a>
+      <a href="#">My Favorite</a>
+    </div>
+
+    <div class="column">
+      <h3>Location</h3>
+      <p>Tengaran</p>
+      <p>Kab. Semarang</p>
+      <p>Jawa Tengah</p>
+    </div>
+
+    <div class="column">
+      <h3>Contacts Info</h3>
+      <p><a href="https://instagram.com/aarsyfnqqvz" target="_blank">@aarsyfnqqvz</a></p>
+      <p><a href="https://instagram.com/sweetyana_404" target="_blank">@sweetyana_404</a></p>
+      <p><a href="https://instagram.com/bintangnyggh" target="_blank">@bintangnyggh</a></p>
+    </div>
+  </div>
+
+  <!-- CREATED -->
+  <div class="footer-bottom">
+    @Created By Kelompok 2 Kolaborasi
+  </div>
+
+</footer>
+
+    </body>
+</html>
