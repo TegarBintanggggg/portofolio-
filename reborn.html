@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Cycle - Sentuhan Tangan Terampil</title>
+    <style>
+        header {
+    /* background-image: url('header-bg.jpg');  Add background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */ background-color:#c8d6c85a; /* Light green header */
+    padding: 1rem 0;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-size: cover; /* Cover the entire navbar */
+    background-position: center; /* Center the image */
+    color: rgb(84, 172, 100); /* Ensure text is readable on the background */
+    background-color: #c8d6c85a;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-brand img {
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.logo-brand h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: inherit; /* Inherit text color from navbar */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: rgb(97, 165, 90); /* Make the links white to stand out */
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ff917d;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #a3b18a;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #a3b18a;
+            color: white;
+        }
+        .advertisement {
+            text-align: center;
+        }
+        .advertisement img {
+            max-width: 100%;
+            height: auto;
+        }
+        .money {
+            font-family: monospace;
+        }
+        .home-button {
+        display: block; 
+    width: 200px; 
+    margin: 15px auto 20px auto;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #a3b18a;
+    color: #1e4d1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /
+    }
+
+        .footer-content {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      flex-wrap: wrap;
+      background-color: #6b8575;
+    }
+
+    .column {
+      min-width: 150px;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .column h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .column a, .column p {
+      display: block;
+      margin: 5px 0;
+      font-size: 14px;
+      color: #e6e6e6;
+      text-decoration: none;
+    }
+
+    .column a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* BAGIAN CREATED */
+    .footer-bottom {
+      margin-top: 15px;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #5d7568;
+    }
+
+    /* RESPONSIVE UNTUK HP */
+    @media (max-width: 768px) {
+      .team-section {
+        flex-wrap: wrap;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+   <nav class="navbar">
+        <div class="logo-brand">
+            <img src="img/logo savanna.jpg" alt="Logo Savanna">
+            <h1>Savanna</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index1.html#home" class="nav-item">Home</a>
+            <a href="index1.html#about">About</a>
+            <a href="index1.html#analysis">Analysis</a>
+            <a href="index1.html#product">Products</a>
+            <a href="index1.html#bundling">Bundling</a>
+            <a href="index1.html#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+    <div class="container">
+        <div class="header">
+            <h1>Reborn earth</h1>
+            <p>Sentuhan Tangan Terampil</p>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>LANGKAH - LANGKAH</th>
+                        <th>RUMUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I. Membuat model matematika dari soal cerita</td>
+                        <td>
+                             X = RAK, Y = MUG, Z = TAS<br>
+                            <span class="money"></span>x + y + z = 105.000 <span class="money"></span> (pers 1)<br>
+                            <span class="money"></span>2x + 2y + z = 180.000 <span class="money"></span> (pers 2)<br>
+                            <span class="money"></span>3x + y + 2z = 235.000 <span class="money"></span> (pers 3)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>II. Eliminasi Z dari pers 1 dan 2</td>
+                        <td>
+                            <span class="money"></span>x + y + z = 105.000 <span class="money"></span><br>
+                            <span class="money"></span>2x + 2y + z = 180.000 <span class="money"></span><br>
+                            Kurangi Pers (1) dari Pers (2):<br>
+                            <span class="money"></span>(2x - x) + (2y - y) + (z - z) = 180.000 - 105.000 <span class="money">$</span><br>
+                            <span class="money"></span>x + y = 75.000 <span class="money"></span> (pers 4)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>III. Eliminasi Z dari pers 1 dan 3</td>
+                        <td>
+                            Kalikan Pers (1) dengan 2: <span class="money"></span>2x + 2y + 2z = 210.000 <span class="money">$</span><br>
+                            Kurangi dari Pers (3):<br>
+                            <span class="money"></span>(3x - 2x) + (y - 2y) + (2z - 2z) = 235.000 - 210.000 <span class="money">$</span><br>
+                            <span class="money"></span>x - y = 25.000 <span class="money"></span> (pers 5)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IV. Eliminasi persamaan 4 dan 5</td>
+                        <td>
+                            <span class="money"></span>x + y = 75.000 <span class="money"></span><br>
+                            <span class="money"></span>x - y = 25.000 <span class="money"></span><br>
+                            Kurangi kedua persamaan:<br>
+                            <span class="money"></span>(x - x) + (y - (-y)) = 75.000 - 25.000 <span class="money"></span><br>
+                            <span class="money"></span>2y = 50.000 <span class="money">$</span> y = 25.000$**
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>V. Substitusikan nilai y ke pers 4</td>
+                        <td>
+                            <span class="money"></span>x + y = 75.000 <span class="money"></span><br>
+                            <span class="money"></span>x + 25.000 = 75.000 <span class="money"></span><br>
+                            <span class="money"></span>x = 75.000 - 25.000 <span class="money"></span>x = 50.000$**
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>VI. Substitusikan nilai x dan y ke pers 1</td>
+                        <td>
+                            <span class="money"></span>x + y + z = 105.000 <span class="money"></span><br>
+                            <span class="money"></span>50.000 + 25.000 + z = 105.000 <span class="money"></span><br>
+                            <span class="money"></span>75.000 + z = 105.000 <span class="money"></span><br>
+                            <span class="money"></span>z = 105.000 - 75.000 <span class="money"></span> z = 30.000
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>VII. Himpunan Penyelesaian (Harga Akhir)</td>
+                        <td>
+                            Harga RAK (x) = <span class="money"></span>50.000 <span class="money"></span><br>
+                            Harga MUG (y) = <span class="money"></span>25.000 <span class="money"></span><br>
+                            Harga TAS (z) = <span class="money"></span>30.000 <span class="money"></span><br>
+                            HP = {(<span class="money"></span>50.000, 25.000, 30.000<span class="money"></span>)}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="advertisement">
+            <h2>ADVERTISEMENT</h2>
+            <img src="img/pakettegar.jpg" alt="Advertisement" style="width: 400px;">
+        </div>
+    <div class="home-button">
+        <a href="index1.html" class="kembali-link">
+            Kembali ke Beranda
+        </a>
+    </div>
+</div>
+</body> 
+<footer>
+  <div class="footer-content">
+    <div class="column">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Service</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="column">
+      <h3>Extra Links</h3>
+      <a href="#">My Account</a>
+      <a href="#">My Order</a>
+      <a href="#">My Favorite</a>
+    </div>
+
+    <div class="column">
+      <h3>Location</h3>
+      <p>Tengaran</p>
+      <p>Kab. Semarang</p>
+      <p>Jawa Tengah</p>
+    </div>
+
+    <div class="column">
+      <h3>Contacts Info</h3>
+      <p><a href="https://instagram.com/aarsyfnqqvz" target="_blank">@aarsyfnqqvz</a></p>
+      <p><a href="https://instagram.com/sweetyana_404" target="_blank">@sweetyana_404</a></p>
+      <p><a href="https://instagram.com/bintangnyggh" target="_blank">@bintangnyggh</a></p>
+    </div>
+  </div>
+
+  <!-- CREATED -->
+  <div class="footer-bottom">
+    @Created By Kelompok 2 Kolaborasi
+  </div>
+
+</footer>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Jaringan Komputer dan Telekomunikasi - GPT SCHOOL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Hero Section dengan Overlay Biru Indigo (Teknologi) */
+        .hero-section {
+            background: linear-gradient(rgba(47, 54, 64, 0.85), rgba(25, 42, 86, 0.85)), 
+                        url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        /* Styling Card */
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        /* Warna Khusus Tema TJKT */
+        .bg-soft-indigo { background-color: #e8eaf6; color: #3f51b5; }
+        .bg-soft-cyan { background-color: #e0f7fa; color: #00bcd4; }
+        .btn-primary { background-color: #192a56; border-color: #192a56; }
+        .btn-primary:hover { background-color: #273c75; border-color: #273c75; }
+        .progress-bar { background-color: #192a56; }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #adb5bd;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="logosklh.png" 
+        alt="Logo" width="40" height="40" class="me-2">GPT SCHOOL
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#bagian-visi">Visi Misi</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#bagian-tabel">Data Siswa</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Jurusan</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pplg.html">PPLG</a></li>
+            <li><a class="dropdown-item" href="tjkt.html">TJKT</a></li>
+            <li><a class="dropdown-item" href="kuliner.html">KULINER</a></li>
+            <li><a class="dropdown-item" href="busana.html">BUSANA</a></li>
+            <li><a class="dropdown-item" href="tsm.html">TSM</a></li>
+            <li><a class="dropdown-item" href="index.html#jurusan">Lihat Semua</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-section text-center">
+    <div class="container mt-4">
+        <h1 class="display-4 fw-bold">TEKNIK JARINGAN KOMPUTER & TELEKOMUNIKASI</h1>
+        <p class="lead">Membangun konektivitas masa depan melalui penguasaan infrastruktur jaringan, server, dan keamanan siber.</p>
+    </div>
+</header>
+
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <div class="col-lg-8">
+            <div class="card p-4 h-100">
+                <h2 class="fw-bold mb-4">Menghubungkan Dunia Lewat Teknologi</h2>
+                <p class="text-secondary mb-5">Jurusan TJKT membekali siswa dengan keahlian merancang, membangun, dan mengelola jaringan komputer berskala luas. Fokus pembelajaran meliputi konfigurasi Router/Switch (Cisco/MikroTik), instalasi Fiber Optik, Administrasi Server, hingga Cloud Computing.</p>
+                
+                <div class="row mb-5">
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box bg-soft-indigo me-3">
+                                <i class="bi bi-router fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Network Engineer</h6>
+                                <small class="text-muted">Routing, Switching, & Wireless.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box bg-soft-cyan me-3">
+                                <i class="bi bi-shield-lock fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Cyber Security</h6>
+                                <small class="text-muted">Keamanan data & administrasi server.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="fw-bold mb-3">Fasilitas Unggulan</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Laboratorium Cisco & MikroTik <span class="badge bg-primary rounded-pill">Standar Internasional</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Sertifikasi Mikrotik (MTCNA) <span class="badge bg-success rounded-pill">Tersedia</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Workshop Fiber Optik <span class="badge bg-info text-dark rounded-pill">Alat Splicing Lengkap</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card mb-4 overflow-hidden">
+                <div class="bg-dark text-white p-3 text-center fw-bold">Status Pendaftaran</div>
+                <div class="p-4">
+                    <div class="d-flex justify-content-between mb-2">
+                        <small class="fw-bold">Kuota Terisi</small>
+                        <small class="text-muted">82%</small>
+                    </div>
+                    <div class="progress mb-4" style="height: 10px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 82%"></div>
+                    </div>
+                    <button class="btn btn-primary w-100 fw-bold mb-2">DAFTAR SEKARANG</button>
+                    <a href="index.html">
+                    <button class="btn btn-light w-100 text-muted btn-sm"><i class="bi bi-arrow-left"></i> Kembali</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card overflow-hidden">
+                <img src="https://images.pexels.com/photos/27928761/pexels-photo-27928761.jpeg" class="card-img-top" alt="Alumni TJKT">
+                <div class="p-4">
+                    <p class="fst-italic text-secondary small">"Berkat TJKT SMK Digital, saya langsung terserap kerja sebagai Network Administrator di perusahaan ISP ternama."</p>
+                    <h6 class="fw-bold mb-0">- Budi, Alumni 2024</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0 small">© 2026 GPT SCHOOL. Seluruh Hak Cipta Dilindungi.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengembangan Perangkat Lunak dan Gim</title>
+    <!-- CSS Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Hero Section dengan Overlay Biru */
+        .hero-section {
+            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)), 
+                        url('https://images.pexels.com/photos/31343632/pexels-photo-31343632.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        /* Styling Card agar melengkung halus */
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .bg-soft-blue { background-color: #e7f1ff; color: #0d6efd; }
+        .bg-soft-green { background-color: #e8f5e9; color: #198754; }
+        /* Footer */
+        footer {
+            background-color: #212529;
+            color: #adb5bd;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="logosklh.png" 
+        alt="Logo" width="40" height="40" class="me-2">GPT SCHOOL
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html# ">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#bagian-visi ">Visi Misi</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="index.html#bagian-tabel">Data Siswa</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="Tugas2.html" role="button" data-bs-toggle="dropdown">Jurusan</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pplg.html">PPLG</a></li>
+            <li><a class="dropdown-item" href="tjkt.html">TJKT</a></li>
+            <li><a class="dropdown-item" href="kuliner.html">KULINER</a></li>
+            <li><a class="dropdown-item" href="busana.html">BUSANA</a></li>
+            <li><a class="dropdown-item" href="tsm.html">TSM</a></li>
+            <li><a class="dropdown-item" href="index.html#jurusan">Lihat Semua</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section text-center">
+    <div class="container mt-4">
+        <h1 class="display-4 fw-bold">PENGEMBANGAN PERANGKAT LUNAK DAN GIM</h1>
+        <p class="lead">Jurusan yang membekali peserta didik dengan pengetahuan, keterampilan, dan sikap unggul agar siap menjadi tenaga kompeten di bidang rekayasa perangkat lunak.</p>
+    </div>
+</header>
+
+<!-- Content Section -->
+<main class="container my-5">
+    <div class="row g-4">
+        
+        <!-- Kolom Kiri: Penjelasan & Fasilitas -->
+        <div class="col-lg-8">
+            <div class="card p-4 h-100">
+                <h2 class="fw-bold mb-4">Membangun Masa Depan Melalui Kode</h2>
+                <p class="text-secondary mb-5">Rekayasa Perangkat Lunak (RPL) / PPLG merupakan program keahlian yang mempelajari proses pembuatan perangkat lunak secara lengkap, mulai dari analisis kebutuhan pengguna, perancangan sistem, pemrograman, pengujian, hingga pemeliharaan aplikasi setelah digunakan.</p>
+                
+                <div class="row mb-5">
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box bg-soft-blue me-3">
+                                <i class="bi bi-code-slash fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Web Dev</h6>
+                                <small class="text-muted">Menguasai Frontend & Backend.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box bg-soft-green me-3">
+                                <i class="bi bi-controller fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Game Dev</h6>
+                                <small class="text-muted">Pembuatan aset 2D/3D & mekanik gim.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="fw-bold mb-3">Fasilitas Unggulan</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Laboratorium Komputer <span class="badge bg-primary rounded-pill">2 Lab</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Akses High Speed Internet <span class="badge bg-info text-dark rounded-pill">Full WiFi</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Sertifikasi Industri (Oracle/Microsoft) <span class="badge bg-warning text-dark rounded-pill">Tersedia</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Kolom Kanan: Status & Testimoni -->
+        <div class="col-lg-4">
+            <!-- Status Card -->
+            <div class="card mb-4 overflow-hidden">
+                <div class="bg-dark text-white p-3 text-center fw-bold">Status Pendaftaran</div>
+                <div class="p-4">
+                    <div class="d-flex justify-content-between mb-2">
+                        <small class="fw-bold">Kuota Terisi</small>
+                        <small class="text-muted">100%</small>
+                    </div>
+                    <div class="progress mb-4" style="height: 10px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                    </div>
+                    <button class="btn btn-primary w-100 fw-bold mb-2">DAFTAR SEKARANG</button>
+                    <a href="index.html">
+                    <button class="btn btn-light w-100 text-muted btn-sm"><i class="bi bi-arrow-left"></i> Kembali</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Testimoni Card -->
+            <div class="card overflow-hidden">
+                <img src="https://images.pexels.com/photos/19805876/pexels-photo-19805876.jpeg" class="card-img-top" alt="Alumni">
+                <div class="p-4">
+                    <p class="fst-italic text-secondary small">"Belajar di PPLG SMK Digital membuka wawasan saya tentang dunia startup teknologi."</p>
+                    <h6 class="fw-bold mb-0">- Ahmad, Alumni 2024</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0 small">© 2026 GPT SCHOOL. Seluruh Hak Cipta Dilindungi.</p>
+    </div>
+</footer>
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

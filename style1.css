@@ -1,0 +1,604 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8; /* Light grey background */
+}
+
+/* Header and Navigation */
+header {
+    /* background-image: url('header-bg.jpg');  Add background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */ background-color:#c8d6c85a; /* Light green header */
+    padding: 1rem 0;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-size: cover; /* Cover the entire navbar */
+    background-position: center; /* Center the image */
+    color: rgb(84, 172, 100); /* Ensure text is readable on the background */
+    background-position: center; /* Center the image */ background-color:#c8d6c85a; /* Light green header */
+    background-color: #c8d6c85a;
+    position: fixed;
+    width:100%;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-brand img {
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.logo-brand h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: inherit; /* Inherit text color from navbar */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: rgb(97, 165, 90); /* Make the links white to stand out */
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ff917d;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('bg\ header.png'); /* Ganti dengan gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    color: rgb(248, 244, 244);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3F5D3A; /* Green button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: #f0ebeb; /* White background */
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about .images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.about .img-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.about .img-row img {
+    width: 200px; /* Adjust as needed */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Analysis Section */
+#analysis {
+    padding: 4rem 2rem;
+    background-image: url("bg\ analysis.png"); /* Add background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+
+}
+
+.analysis-h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.analysis-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.analysis-item {
+    width: 300px; /* Adjust as needed */
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.analysis-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.analysis-item .read-more-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color:#1E3F17; /* Green button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+/*latest produk*/
+/* Products Section /; / Tambahkan URL gambar di sini */
+#products {
+    padding: 4rem 2rem;
+    background-color: #d0e8d0; /* Light green background */
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.product-item {
+    width: 250px; /* Adjust as needed */
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+/* Product Section */
+
+/* Products Container */
+.products-container {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan item pindah ke baris baru */
+    justify-content: center; /* Pusatkan item horizontal */
+    padding: 20px;
+}
+
+/* Product Item (Card) */
+.product-item {
+    width: calc(33.33% - 40px); /* Lebar card (3 per baris) */
+    min-height: 300px; /* Tinggi card */
+    background-color: #A8BA82; /* Warna latar belakang card */
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar total */
+}
+.product {
+    padding: 50px 20px;
+    background-color: #F3EED9; /* Warna latar belakang */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Batasi lebar container */
+    margin: 0 auto; /* Pusatkan container */
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2.5em; /* Gunakan em untuk ukuran font yang responsif */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Products Container */
+.products-container {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan item pindah ke baris baru */
+    justify-content: center; /* Pusatkan item horizontal */
+    padding: 20px;
+}
+
+/* Product Item (Card) */
+.product-item {
+    width: 200px; /* Lebar card */
+    min-height: 300px; /* Tinggi card */
+    background-color: #A8BA82; /* Warna latar belakang card */
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar total */
+}
+
+/* Product Image */
+.product-item img {
+    width: 150px; /* Lebar gambar */
+    height: 150px; /* Tinggi gambar */
+    object-fit: contain; /* Memastikan gambar tidak terpotong */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Product Title */
+.product-item h3 {
+    font-size: 1.2em; /* Gunakan em untuk ukuran font yang responsif */
+    margin: 10px 0;
+    flex-grow: 1;
+    color: black;
+}
+
+/* Read More Button */
+.product-item .read-more-button {
+    background-color: #4CAF50; /* Warna tombol */
+    color: rgb(248, 236, 236);
+    padding: 8px 16px; /* Padding tombol */
+    border: none;
+    border-radius: 5px; /* Sudut tombol */
+    cursor: pointer;
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 40px); /* Dua card per baris di layar sedang */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: calc(100% - 40px); /* Satu card per baris di layar kecil */
+    }
+}
+
+    /* Bundling Section */
+.bundling {
+    background-color: #F3EED9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url("bg\ bundling.jpeg"); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Memastikan gambar menutupi seluruh area */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+    background-position: center center; /* Memposisikan gambar di tengah */
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Batasi lebar container */
+    margin: 0 auto; /* Pusatkan container */
+}
+
+.container h1 {
+    font-size: 2.5em; /* Gunakan em untuk ukuran font yang responsif */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Content Bundling */
+.content-bundling {
+    display: flex;
+    justify-content: center; /* Pusatkan card horizontal */
+    align-items: flex-start; /* Ratakan card di bagian atas */
+    padding: 20px;
+    overflow-x: auto; /* Membuat scroll horizontal jika card melebihi lebar container */
+    -webkit-overflow-scrolling: touch; /* Membuat scroll lebih halus di iOS */
+}
+
+/* Card */
+.card {
+    width: 200px; /* Lebar card */
+    min-height: 300px; /* Tinggi card */
+    background-color: #A8BA82;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar total */
+    flex-shrink: 0; /* Mencegah card menyusut */
+}
+
+/* Card Image */
+.card img {
+    width: 150px; /* Lebar gambar */
+    height: 150px; /* Tinggi gambar */
+    object-fit: contain; /* Memastikan gambar tidak terpotong */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Card Paragraph */
+.card p {
+    font-size: 1.2em; /* Gunakan em untuk ukuran font yang responsif */
+    margin: 10px 0;
+    flex-grow: 1;
+    color: black;
+}
+
+/* Button */
+.card .btn {
+    background-color: rgb(97, 165, 90); /* Warna tombol */
+    color: white;
+    padding: 8px 16px; /* Padding tombol */
+    border: none;
+    border-radius: 5px; /* Sudut tombol */
+    cursor: pointer;
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+/* Container for Centering the Form */
+.contact-container {
+    width: 100%;
+    max-width: 400px; /* Limits the width of the form */
+    padding: 20px;
+    margin: auto;
+    margin-top: -80px;
+    padding-top: 80px;
+    margin-bottom: 2rem;
+}
+
+/* The White Form Box */
+.contact-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the 'Contact Us' heading */
+    
+}
+
+.contact-box h2 {
+    margin:0 auto;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: normal;
+    
+}
+
+/* Styling for each Input Group */
+.input-group {
+    text-align: left; /* Align labels/inputs to the left within the box */
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block; /* Make the label take its own line */
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Styling for all Input and Textarea fields */
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for padding not to increase total width */
+    font-size: 16px;
+}
+
+/* Styling for the Submit Button */
+.submit-btn {
+    background-color: rgb(97, 165, 90); /* Bright blue color, similar to your image */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Make the button full width of the box */
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #00b32758; /* Darker blue on hover */
+}
+
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* BAGIAN LATAR BELAKANG DEDAUNAN */
+    .footer {
+      color: white;
+      text-align: center;
+      background-image: url('../img/bg\ footer.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 30px;
+    }
+
+    /* BAGIAN FOTO ANGGOTA */
+    .team-section {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .member {
+      text-align: center;
+      color: white;
+    }
+
+    .member img {
+      width: 100px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid white;
+    }
+
+    .member p {
+      margin-top: 5px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    /* BAGIAN ISI TENGAH (LINK, LOKASI, INSTAGRAM) */
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      flex-wrap: wrap;
+      background-color: #6b8575;
+    }
+    .column {
+      min-width: 150px;
+      padding: 10px;
+      text-align: left;
+    }
+    .column h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .column a, .column p {
+      display: block;
+      margin: 5px 0;
+      font-size: 14px;
+      color: #e6e6e6;
+      text-decoration: none;
+    }
+
+    .column a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* BAGIAN CREATED */
+    .footer-bottom {
+      margin-top: 15px;
+      padding: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #5d7568;
+    }
+    
+    /* RESPONSIVE UNTUK HP */
+    @media (max-width: 768px) {
+      .team-section {
+        flex-wrap: wrap;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .btn-kembali-fixed {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    z-index: 9999;
+    background: #000;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 25px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .btn-kembali-fixed:hover {
+    background: #333;
+    color: #fff;
+    transform: translateY(-2px);
+  }
