@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencemaran Lingkungan: Definisi, Jenis, Dampak, dan Solusi</title>
+    <style>
+        header {
+    /* background-image: url('header-bg.jpg');  Add background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the image */ background-color:#c8d6c85a; /* Light green header */
+    padding: 1rem 0;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-size: cover; /* Cover the entire navbar */
+    background-position: center; /* Center the image */
+    color: rgb(84, 172, 100); /* Ensure text is readable on the background */
+    background-color: #c8d6c85a;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-brand img {
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.logo-brand h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: inherit; /* Inherit text color from navbar */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: rgb(97, 165, 90); /* Make the links white to stand out */
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ff917d;
+}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #546e7a;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .jenis-pencemaran {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .jenis-pencemaran div {
+            background-color: #f1f6ff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .jenis-pencemaran h3 {
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .solusi ol {
+            list-style-type: decimal;
+        }
+
+        .solusi li ul {
+            list-style-type: circle;
+            margin-top: 10px;
+        }
+
+        strong {
+            color: #34495e;
+        }
+
+        /* Gaya tambahan untuk ikon */
+        .jenis-pencemaran h3 span {
+            margin-right: 8px;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .jenis-pencemaran {
+                grid-template-columns: 1fr;
+            }
+        }
+        style.css utama */
+    body {
+        background-color: #e9f0ea; /* Mirip dengan --body-bg-light */
+    }
+    .detail-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .detail-container h1 {
+        color: #73846b; 
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 32px;
+    }
+    .detail-container p {
+        margin-bottom: 15px;
+        text-align: justify;
+        line-height: 1.7;
+    }
+    /* Styling Navbar di detail.html (Meniru style.css) */
+    .navbar {
+        background-color: #7a8f7a; 
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-links {
+        list-style: none;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        padding: 8px 16px;
+        background-color: #8abf8a;
+        border-radius: 8px;
+    }
+    .btn {
+        display: inline-block;
+        background-color: #7a8f7a;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+    }.home-button {
+        display: block; 
+    width: 200px; 
+    margin: 15px auto 20px auto;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #a3b18a;
+    color: #1e4d1e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+      flex-wrap: wrap;
+      background-color: #6b8575;
+    }
+
+    .column {
+      min-width: 150px;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .column h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .column a, .column p {
+      display: block;
+      margin: 5px 0;
+      font-size: 14px;
+      color: #e6e6e6;
+      text-decoration: none;
+    }
+
+    .column a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* BAGIAN CREATED */
+    .footer-bottom {
+      margin-top: 15px;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+      font-weight: bold;
+      background-color: #5d7568;
+    }
+
+    /* RESPONSIVE UNTUK HP */
+    @media (max-width: 768px) {
+      .team-section {
+        flex-wrap: wrap;
+      }
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+    <header>
+   <nav class="navbar">
+        <div class="logo-brand">
+            <img src="img/logo savanna.jpg" alt="Logo Savanna">
+            <h1>Savanna</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index1.html#home" class="nav-item">Home</a>
+            <a href="index1.html#about">About</a>
+            <a href="index1.html#analysis">Analysis</a>
+            <a href="index1.html#product">Products</a>
+            <a href="index1.html#bundling">Bundling</a>
+            <a href="index1.html#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <article>
+            <h1>Pencemaran Lingkungan</h1>
+
+            <section class="section definisi">
+                <h2>Definisi</h2>
+                <p>Pencemaran adalah masuknya atau dimasukkannya makhluk hidup, zat, energi, atau komponen lain ke dalam lingkungan yang menyebabkan kualitas lingkungan turun atau berubah sehingga tidak sesuai dengan peruntukannya. Pencemaran dapat terjadi akibat aktivitas manusia maupun proses alam.</p>
+            </section>
+
+            <section class="section aspek-penting">
+                <h2>Aspek-Aspek Penting Pencemaran</h2>
+                <ul>
+                    <li><strong>Kontaminasi Lingkungan:</strong> Pencemaran merupakan kontaminasi lingkungan oleh bahan-bahan yang merugikan.</li>
+                    <li><strong>Perubahan Tatanan Lingkungan:</strong> Pencemaran mengubah tatanan lingkungan akibat kegiatan manusia atau proses alam.</li>
+                    <li><strong>Penurunan Kualitas Lingkungan:</strong> Pencemaran menyebabkan penurunan kualitas lingkungan yang berdampak pada kesehatan dan ekosistem.</li>
+                </ul>
+            </section>
+
+            <section class="section jenis-pencemaran">
+                <h2>Jenis-Jenis Pencemaran Lingkungan</h2>
+                <div >
+                    <h3><span>☁</span> Pencemaran Udara</h3>
+                    <p>Pencemaran udara adalah masuknya zat berbahaya ke atmosfer, seperti asap kendaraan, debu, dan gas beracun. Dampaknya termasuk gangguan pernapasan, hujan asam, efek rumah kaca, dan perubahan iklim.</p>
+                </div>
+                <div>
+                    <h3><span>&#x1F30D;</span> Pencemaran Tanah</h3>
+                    <p>Pencemaran tanah adalah kontaminasi tanah oleh bahan kimia berbahaya seperti limbah pabrik, pestisida, dan limbah radioaktif. Hal ini dapat menyebabkan kerusakan kesuburan tanah dan gangguan kesehatan manusia.</p>
+                </div>
+                <div>
+                    <h3><span>&#x1F4A7;</span> Pencemaran Air</h3>
+                    <p>Pencemaran air adalah kontaminasi badan air seperti sungai, danau, dan laut oleh limbah industri, domestik, atau pertanian. Dampaknya termasuk kerusakan ekosistem air, penyebaran penyakit, dan kekurangan air bersih.</p>
+                </div>
+            </section>
+
+            <section class="section sumber-pencemaran">
+                <h2>Sumber-Sumber Pencemaran</h2>
+                <ul>
+                    <li><strong>Aktivitas Industri:</strong> Menghasilkan limbah cair, padat, dan gas yang mencemari lingkungan jika tidak diolah dengan benar.</li>
+                    <li><strong>Pertanian:</strong> Penggunaan pupuk dan pestisida kimia secara berlebihan dapat mencemari tanah dan air.</li>
+                    <li><strong>Transportasi:</strong> Emisi gas buang dari kendaraan bermotor menjadi sumber utama pencemaran udara di perkotaan.</li>
+                    <li><strong>Domestik:</strong> Limbah rumah tangga seperti sampah, deterjen, dan air limbah dapat mencemari lingkungan jika tidak dikelola dengan baik.</li>
+                    <li><strong>Pertambangan:</strong> Kegiatan pertambangan dapat menghasilkan limbah berbahaya dan merusak lingkungan.</li>
+                </ul>
+            </section>
+
+            <section class="section dampak-pencemaran">
+                <h2>Dampak Pencemaran</h2>
+                <ul>
+                    <li><strong>Kesehatan Manusia:</strong> Menyebabkan berbagai masalah kesehatan seperti gangguan pernapasan dan penyakit menular.</li>
+                    <li><strong>Ekosistem:</strong> Merusak habitat dan menyebabkan kepunahan spesies.</li>
+                    <li><strong>Ekonomi:</strong> Menyebabkan kerugian pada sektor perikanan, pertanian, dan pariwisata.</li>
+                    <li><strong>Sosial:</strong> Memicu konflik sumber daya dan menurunkan kualitas hidup.</li>
+                </ul>
+            </section>
+
+            <section class="section solusi">
+                <h2>Solusi Mengatasi Pencemaran</h2>
+                <ol>
+                    <li><strong>Pengurangan Emisi:</strong>
+                        <ul>
+                            <li>Menggunakan transportasi publik atau sepeda</li>
+                            <li>Mengurangi penggunaan kendaraan pribadi</li>
+                            <li>Menggunakan energi terbarukan (matahari, angin, air)</li>
+                            <li>Menerapkan teknologi bersih di industri</li>
+                        </ul>
+                    </li>
+                    <li><strong>Pengelolaan Limbah:</strong>
+                        <ul>
+                            <li>Mendaur ulang sampah</li>
+                            <li>Mengolah limbah industri sebelum dibuang</li>
+                            <li>Mengurangi penggunaan plastik</li>
+                            <li>Memilah sampah organik dan anorganik</li>
+                        </ul>
+                    </li>
+                    <li><strong>Konservasi Air:</strong>
+                        <ul>
+                            <li>Mengurangi penggunaan air bersih</li>
+                            <li>Menanam pohon untuk menjaga daerah resapan air</li>
+                            <li>Tidak membuang sampah ke sungai atau danau</li>
+                            <li>Menggunakan pupuk organik dalam pertanian</li>
+                        </ul>
+                    </li>
+                    <li><strong>Pendidikan dan Kesadaran:</strong>
+                        <ul>
+                            <li>Meningkatkan kesadaran masyarakat tentang pentingnya menjaga lingkungan</li>
+                            <li>Mengadakan kampanye lingkungan</li>
+                            <li>Melibatkan masyarakat dalam kegiatan pelestarian lingkungan</li>
+                            <li>Mengintegrasikan pendidikan lingkungan dalam kurikulum sekolah</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <div class="home-button">
+        <a href="index1.html" class="kembali-link">
+            Kembali ke Beranda
+        </a>
+    </div>
+</div>
+        </article>
+    </div>
+</body>
+    <footer>
+  <div class="footer-content">
+    <div class="column">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Service</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="column">
+      <h3>Extra Links</h3>
+      <a href="#">My Account</a>
+      <a href="#">My Order</a>
+      <a href="#">My Favorite</a>
+    </div>
+
+    <div class="column">
+      <h3>Location</h3>
+      <p>Tengaran</p>
+      <p>Kab. Semarang</p>
+      <p>Jawa Tengah</p>
+    </div>
+
+    <div class="column">
+      <h3>Contacts Info</h3>
+      <p><a href="https://instagram.com/aarsyfnqqvz" target="_blank">@aarsyfnqqvz</a></p>
+      <p><a href="https://instagram.com/sweetyana_404" target="_blank">@sweetyana_404</a></p>
+      <p><a href="https://instagram.com/bintangnyggh" target="_blank">@bintangnyggh</a></p>
+    </div>
+  </div>
+
+  <!-- CREATED -->
+  <div class="footer-bottom">
+    @Created By Kelompok 2 Kolaborasi
+  </div>
+
+</footer>
+
+</html>

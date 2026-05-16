@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environs - Jaga Bumi Kita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <header id="mainHeader">
+        <div class="topbar d-flex justify-content-between align-items-center px-4">
+            <div>
+                <span class="me-3"><i class="bi bi-envelope-fill me-2"></i>info@environs.com</span>
+                <span><i class="bi bi-telephone-fill me-2"></i>+62 838-4586-7809</span>
+            </div>
+            <div class="d-none d-md-block">
+                <a href="#" class="text-white ms-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white ms-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white ms-3"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-white ms-3"><i class="bi bi-pinterest"></i></a>
+                <a href="#" class="text-white ms-3"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light px-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Environs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link px-3" href="#heroCarousel">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
+                         <li class="nav-item"><a class="nav-link px-3" href="#causes">Causes</a></li>
+                           <li class="nav-item"><a class="nav-link px-3" href="#events">Events</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item" href="#news">News</a></li>
+                                <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-lg-3"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                        <li>
+                      <button class="btn-donate ms-3" data-bs-toggle="modal" data-bs-target="#donateModal">
+            <i class="bi bi-heart-fill me-1"></i>Donate Now
+          </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main1.jpg');">
+                    <div class="container text-center text-white hero-content">
+                        <h6 class="text-uppercase mb-3 fw-bold">Warisan Masa Depan</h6>
+                        <h1 class="display-2 fw-bold mb-4">Edukasi Untuk<br>Perubahan</h1>
+                        <p class="lead mb-5">Membangun kesadaran lingkungan sejak dini melalui workshop dan kelas alam.</p>
+                        <a href="#" class="btn btn-success btn-lg px-5 py-3 button">Daftar Relawan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('gbrmain2.jpg');">
+                    <div class="container text-center text-white hero-content">
+                        <h6 class="text-uppercase mb-3 fw-bold">Menjaga Lingkungan</h6>
+                        <h1 class="display-2 fw-bold mb-4">Menjaga Kebersihan<br>Lingkungan</h1>
+                        <p class="lead mb-5">Menjaga Kebersihan Lingkungan,Tujuan Kita Bersama.</p>
+                        <a href="#" class="btn btn-success btn-lg px-5 py-3 button">Gabung Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('main3.jpg');">
+                    <div class="container text-center text-white hero-content">
+                        <h6 class="text-uppercase mb-3 fw-bold">Aksi Lingkungan</h6>
+                        <h1 class="display-2 fw-bold mb-4">Bersama Jaga<br>Ekosistem</h1>
+                        <p class="lead mb-5">Melindungi keanekaragaman hayati melalui program konservasi yang berkelanjutan.</p>
+                        <a href="#" class="btn btn-success btn-lg px-5 py-3 button">Gabung Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section id="about" class="py-5 my-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-center g-4">
+            
+            <div class="col-lg-6 px-lg-4">
+                <img src="alam.jpg" alt="About" class="about-img img-fluid eco">
+            </div>
+
+            <div class="col-lg-6 px-lg-4">
+                <span class="text-uppercase text-success fw-bold">About Us</span>
+                <h2 class="fs-25 fw-bold my-3 h2-tujuan">Tujuan Kami Adalah Menjaga Kelestarian Alam</h2>
+                <p class="text-muted mb-4 lead p-tujuan">Kami adalah organisasi yang berdedikasi untuk memulihkan ekosistem dan mengedukasi masyarakat tentang pentingnya keberlanjutan. Bersama, kita bisa membuat dunia yang lebih hijau untuk generasi mendatang.</p>
+                
+                <div class="tab-container">
+                    <div class="d-flex gap-2 mb-3">
+                <a href="#about" class="btn btn-success px-4 py-2 rounded-0 tombol active">About</a>
+                <a href="#vision" class="btn btn-light px-4 py-2 rounded-0 tombol">Vision</a>
+                <a href="#mission" class="btn btn-light px-4 py-2 rounded-0 tombol">Mission</a>
+                    </div> 
+                    <p class="text-uppercase fs-4 fw-bold" style="color: var(--dark-green);">Tentang kami</p>
+                    <p class="text-left fs-5 text-muted">Mengurangi dampak pemanasan global melalui aksi penanaman hutan kembali dan kampanye pengurangan limbah plastik secara berkelanjutan.</p>
+                    
+            <div class="mt-5"> <a href="#javascript:void(0)" class="btn btn-success px-4 py-2 rounded-0">Read More</a> </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-light">
+  <div class="container px-md-5">
+    <p class="text-center text-uppercase text-success fw-bold mb-0">what we do</p>
+    <h2 class="py-2 px-2 text-center fw-bold mb-5 fs-25" style="color: var(--dark-green)">
+      Kontribusi Nyata Kami untuk Menjaga <br> Kelestarian Lingkungan
+    </h2>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3">
+        <div class="card-container position-relative overflow-hidden rounded shadow-sm">
+          <img src="penggalangan.jpg" alt="Penggalangan Dana" class="img-zoom w-100">
+          <div class="overlay d-flex flex-column justify-content-end p-3 text-white">
+            <h5 class="fw-bold fs-4">Penggalangan Dana</h5>
+          </div>
+        </div>
+        <p class="py-3 text-muted" style="font-size: 15px;">
+          Mengumpulkan dukungan finansial secara transparan untuk membiayai proyek penghijauan dan pemulihan lahan kritis di berbagai wilayah.
+          </p>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-container position-relative overflow-hidden rounded shadow-sm">
+          <img src="kemitraan.jpg" alt="Kemitraan Strategis" class="img-zoom w-100">
+          <div class="overlay d-flex flex-column justify-content-end p-3 text-white">
+            <h5 class="fw-bold fs-4">Kemitraan Strategis</h5>
+          </div>
+        </div>
+         <p class="py-3 text-muted" style="font-size: 15px;">
+            Bekerja sama erat dengan pemerintah dan sektor wisata, untuk menyediakan layanan konsultasi lingkungan yang berkelanjutan.
+          </p>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-container position-relative overflow-hidden rounded shadow-sm">
+          <img src="ekosistem.jpg" alt="Ekowisata Terpadu" class="img-zoom w-100">
+          <div class="overlay d-flex flex-column justify-content-end p-3 text-white">
+            <h5 class="fw-bold fs-4">Ekowisata Terpadu</h5>
+          </div>
+        </div>
+        <p class="text-justify py-3 text-muted" style="font-size: 15px;">
+          Menyediakan tur edukasi alam yang dipandu oleh ahli profesional untuk meningkatkan kesadaran masyarakat tentang ekosistem hutan.
+          </p>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-container position-relative overflow-hidden rounded shadow-sm">
+          <img src="konservasi.jpg" alt="Konservasi Satwa" class="img-zoom w-100">
+          <div class="overlay d-flex flex-column justify-content-end p-3 text-white">
+            <h5 class="fw-bold fs-4">Konservasi Satwa</h5>
+          </div>
+        </div>
+        <p class="py-3 text-muted" style="font-size: 15px;">
+         Melindungi habitat asli hewan liar dari perburuan dan kerusakan lahan guna menjaga rantai makanan serta keanekaragaman hayati.
+          </p>
+      </div>
+    </div>
+  </div> <br>
+    <div class="mt-5 text-center"> <a href="#javascript:void(0)" class="btn btn-success px-4 py-2 rounded-0">Read More</a> </div>
+</section>
+
+<!-- Donate Modal -->
+<div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donateModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="donateModalLabel">Donasi Sekarang</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="donorName" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="donorName" placeholder="Masukkan nama Anda">
+          </div>
+          <div class="mb-3">
+            <label for="donorEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="donorEmail" placeholder="nama@email.com">
+          </div>
+          <div class="mb-3">
+            <label for="donationAmount" class="form-label">Jumlah Donasi (Rp)</label>
+            <input type="number" class="form-control" id="donationAmount" placeholder="Minimal Rp 10.000">
+          </div>
+          <div class="mb-3">
+            <label for="paymentMethod" class="form-label">Metode Pembayaran</label>
+            <select class="form-select" id="paymentMethod">
+              <option selected>Transfer Bank</option>
+              <option>Kartu Kredit</option>
+              <option>E-Wallet</option>
+            </select>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="anonymousCheck">
+            <label class="form-check-label" for="anonymousCheck">Sembunyikan nama saya (anonim)</label>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Lanjutkan Pembayaran</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <small class="text-muted">Donasi Anda akan digunakan untuk program pelestarian lingkungan.</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="py-5 px-3" id="services">
+  <div class="container">
+    <div class="text-center pb-3">
+    <p class="text-center text-uppercase text-success fw-bold mb-0">Donation</p>
+          <h2 class="py-2 text-center fs-25 fw-bold" style="color: var(--dark-green)">
+      Uang Anda akan Menyelamatkan Hidup Kami
+    </h2>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 rounded-0 shadow-sm position-relative overflow-hidden">
+          <img src="bantu1.jpg" class="w-100" alt="Organik" style="height: 450px; object-fit: cover;">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 text-white" style="background-color: rgba(0, 0, 0, 0.6);">
+            <p class="fw-bold mb-1" style="font-size: 0.7rem; color: var(--accent-green)">ORGANIK</p>
+            <h3 class="fw-bold mb-1">Bantu Kami Lebih Banyak</h3>
+            <p class="small mb-2">Melindungi Lingkungan</p>
+            <p style="font-size: 0.75rem; line-height: 1.4; opacity: 0.9;">
+              Melindungi lingkungan adalah tanggung jawab kita bersama untuk menjaga kelestarian alam demi kehidupan yang sehat dan berkelanjutan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 rounded-0 shadow-sm position-relative overflow-hidden">
+          <img src="bantu2.jpg" class="w-100" alt="Ekosistem" style="height: 450px; object-fit: cover;">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 text-white" style="background-color: rgba(0, 0, 0, 0.6);">
+            <p class="fw-bold mb-1" style="font-size: 0.7rem; color: var(--accent-green)">EKOSISTEM</p>
+            <h3 class="fw-bold mb-1">Bantu Kami Lebih Banyak</h3>
+            <p class="small mb-2">Melindungi Lingkungan</p>
+            <p style="font-size: 0.75rem; line-height: 1.4; opacity: 0.9;">
+              Melindungi lingkungan adalah tanggung jawab kita bersama untuk menjaga kelestarian alam demi kehidupan yang sehat dan berkelanjutan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 rounded-0 shadow-sm position-relative overflow-hidden">
+          <img src="bantu3.jpg" class="w-100" alt="Recycling" style="height: 450px; object-fit: cover;">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 text-white" style="background-color: rgba(0, 0, 0, 0.6);">
+            <p class="fw-bold mb-1" style="font-size: 0.7rem; color: var(--accent-green)">RECYCLING</p>
+            <h3 class="fw-bold mb-1">Bantu Kami Lebih Banyak</h3>
+            <p class="small mb-2">Melindungi Lingkungan</p>
+            <p style="font-size: 0.75rem; line-height: 1.4; opacity: 0.9;">
+              Melindungi lingkungan adalah tanggung jawab kita bersama untuk menjaga kelestarian alam demi kehidupan yang sehat dan berkelanjutan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="mt-5 text-center"> <a href="#javascript:void(0)" class="btn btn-success px-4 py-2 rounded-0">All Donation</a> </div>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 text-white position-relative" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('jabattangan.jpg') no-repeat center center/cover; min-height: 500px; display: flex; align-items: center;">
+  <div class="container text-center">
+    
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8">
+        <h6 class="text-success fw-bold">ACHIEVEMENT</h6>
+        <p class="small">Berhasil berkontribusi dalam berbagai kegiatan pelestarian lingkungan, seperti program penghijauan, pengelolaan sampah berbasis 3R, serta kampanye kesadaran lingkungan yang melibatkan masyarakat sekitar sebagai bentuk nyata kepedulian terhadap keberlanjutan alam.</p>
+      </div>
+    </div>
+
+<div class="row g-4 justify-content-center text-center text-white">
+  
+  <div class="col-6 col-md-3">
+    <div class="p-4 border border-white border-opacity-27 h-100">
+      <i class="bi bi-hand-thumbs-up-fill fs-1 mb-3 d-block"></i>
+      <h6 class="fw-bold mb-3">Beavers Saved</h6>
+      <div class="p-2 mt-2" style="border: 4px dotted #f1f1f1 !important;">
+        <span class="text-success fw-bold fs-5">2000 +</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="p-4 border border-white border-opacity-27 h-100">
+      <i class="bi bi-file-earmark-medical-fill fs-1 mb-3 d-block"></i>
+      <h6 class="fw-bold mb-3">Funds Collected</h6>
+      <div class="p-2 mt-2" style="border: 4px dotted #f1f1f1 !important;">
+        <span class="text-success fw-bold fs-5">519 $</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="p-4 border border-white border-opacity-27 h-100">
+      <i class="bi bi-person-fill fs-1 mb-3 d-block"></i>
+      <h6 class="fw-bold mb-3">Volunteer</h6>
+      <div class="p-2 mt-2" style="border: 4px dotted #f1f1f1 !important;">
+        <span class="text-success fw-bold fs-5">713 +</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="p-4 border border-white border-opacity-27 h-100">
+      <i class="bi bi-heart-fill fs-1 mb-3 d-block"></i>
+      <h6 class="fw-bold mb-3">Days of Help</h6>
+      <div class="p-2 mt-2" style="border: 4px dotted #f1f1f1 !important;">
+        <span class="text-success fw-bold fs-5">487 +</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="mt-5">
+      <a href="#javascript:void(0)" class="btn btn-success px-4 py-2 rounded-0">Join With Us</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="py-5" id="causes">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-success fw-bold text-uppercase" style="letter-spacing: 1px;">Recent Causes</h6>
+            <h2 class="fw-bold px-2 fs-25" style="color: var(--dark-green);">Lingkungan Membutuhkan Perlindungan Kita</h2>
+            <p class="text-muted mx-auto mt-3" style="max-width: 800px;">
+                Lingkungan membutuhkan perhatian dan perlindungan dari kita semua. Dengan menjaga kebersihan, mengurangi sampah, serta memanfaatkan sumber daya alam secara bijak, kita dapat membantu melestarikan alam.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <div class="position-relative">
+                        <img src="causes1.jpg" class="card-img-top" alt="Cause 1" style="height: 300px; object-fit: cover;">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2 px-3 py-2">Donate Now</span>
+                        <div class="position-absolute bottom-0 start-0 w-100 p-2 d-flex justify-content-between" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <small class="text-white">Goal: $2000</small>
+                            <small class="text-white">Raised: $1200</small>
+                        </div>
+                    </div>
+                    <div class="progress rounded-0 position-relative" style="height: 12px; background-color: #e9ecef; overflow: visible;">
+                        <div class="progress-bar bg-dark" style="width: 60%;"></div>
+                        <small class="position-absolute top-50 translate-middle bg-black text-white px-1" style="left: 60%; font-size: 10px; z-index: 2;">60%</small>
+                    </div>
+                    <div class="card-body bg-success text-white d-flex flex-column">
+                        <h5 class="card-title fw-bold h6" style="color: #153015; font-size: 25px;">Pertama Kegiatan Lingkungan</h5>
+                        <p class="card-text small mb-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#javascript:void(0)" class="btn text-white mt-auto align-self-start px-4" style="background-color: #81c4818c;">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <div class="position-relative">
+                        <img src="causes2.jpg" class="card-img-top" alt="Cause 2" style="height: 300px; object-fit: cover;">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2 px-3 py-2">Donate Now</span>
+                        <div class="position-absolute bottom-0 start-0 w-100 p-2 d-flex justify-content-between" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <small class="text-white">Goal: $3000</small>
+                            <small class="text-white">Raised: $1400</small>
+                        </div>
+                    </div>
+                    <div class="progress rounded-0 position-relative" style="height: 12px; background-color: #e9ecef; overflow: visible;">
+                        <div class="progress-bar bg-dark" style="width: 45%;"></div>
+                        <small class="position-absolute top-50 translate-middle bg-black text-white px-1" style="left: 45%; font-size: 10px; z-index: 2;">45%</small>
+                    </div>
+                    <div class="card-body bg-success text-white d-flex flex-column">
+                    <h5 class="card-title fw-bold h6" style="color: #153015; font-size: 25px;">Bangun Sekolah Untuk Anak-anak Miskin</h5>
+                        <p class="card-text small mb-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#javasvript:void(0)" class="btn text-white mt-auto align-self-start px-4" style="background-color: #81c4818c;">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <div class="position-relative">
+                        <img src="causes3.jpg" class="card-img-top" alt="Cause 3" style="height: 300px; object-fit: cover;">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2 px-3 py-2">Donate Now</span>
+                        <div class="position-absolute bottom-0 start-0 w-100 p-2 d-flex justify-content-between" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <small class="text-white">Goal: $4000</small>
+                            <small class="text-white">Raised: $2000</small>
+                        </div>
+                    </div>
+                    <div class="progress rounded-0 position-relative" style="height: 12px; background-color: #e9ecef; overflow: visible;">
+                        <div class="progress-bar bg-dark" style="width: 50%;"></div>
+                        <small class="position-absolute top-50 translate-middle bg-black text-white px-1" style="left: 50%; font-size: 10px; z-index: 2;">50%</small>
+                    </div>
+                    <div class="card-body bg-success text-white d-flex flex-column">
+                      <h5 class="card-title fw-bold h6" style="color: #153015; font-size: 25px;">Sistem Air Bersih Untuk Warga Miskin</h5>
+                        <p class="card-text small mb-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#javascript:void(0)" class="btn text-light mt-auto align-self-start px-4" style="background-color: #81c4818c;">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <div class="position-relative">
+                        <img src="causes4.jpg" class="card-img-top" alt="Cause 4" style="height: 300px; object-fit: cover;">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2 px-3 py-2">Donate Now</span>
+                        <div class="position-absolute bottom-0 start-0 w-100 p-2 d-flex justify-content-between" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <small class="text-white">Goal: $2500</small>
+                            <small class="text-white">Raised: $1800</small>
+                        </div>
+                    </div>
+                    <div class="progress rounded-0 position-relative" style="height: 12px; background-color: #e9ecef; overflow: visible;">
+                        <div class="progress-bar bg-dark" style="width: 70%;"></div>
+                        <small class="position-absolute top-50 translate-middle bg-black text-white px-1" style="left: 70%; font-size: 10px; z-index: 2;">70%</small>
+                    </div>
+                    <div class="card-body bg-success text-white d-flex flex-column">
+                        <h5 class="card-title fw-bold h6" style="color: #153015; font-size: 25px;">Kegiatan Lingkungan Pertama</h5>
+                        <p class="card-text small mb-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#javascript:void(0)" class="btn text-light mt-auto align-self-start px-4" style="background-color: #81c4818c;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light" id="events">
+    <div class="container">
+        <div class="row align-items-center mb-4">
+            <div class="col-12 text-center position-relative">
+                <h6 class="text-success fw-bold text-uppercase" style="letter-spacing: 1px;">upcoming events</h6>
+             <h2 class="py-2 px-2 text-center fs-25 fw-bold mb-5" style="color: var(--dark-green)">
+      Bantulah Kami Hari Ini, Karena Besok Mungkin Anda <br> yang Membutuhkan Lebih Banyak Bantuan!
+            </h2>
+                
+                <div class="d-flex justify-content-between position-absolute start-0 end-0 px-2" style="top: 70%; z-index: 10;">
+                    <button class="btn btn-success rounded-0 nav-arrow" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">←</button>
+                    <button class="btn btn-success rounded-0 nav-arrow" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">→</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="card-wrapper">
+                                <div class="card border-0 h-100 shadow-sm text-white" style="background-color: #43814d;">
+                                    <img src="event1.jpg" class="card-img-top" alt="Event 1">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between mb-3 small">
+                                            <span><i class="bi bi-geo-alt-fill"></i> Jakarta Pusat</span>
+                                            <span><i class="bi bi-calendar-event"></i> 10 Feb, 2023</span>
+                                        </div>
+                                        <h5 class="card-title fw-bold" style="color: #153015;">Cara Membuat Rencana Kebersihan</h5>
+                                        <p class="card-text small opacity-75">Menyusun rencana kebersihan dapat dimulai dengan menentukan area yang perlu dibersihkan, membuat jadwal rutin, serta membagi tugas secara teratur agar lebih efektif dan efisien. Dengan perencanaan yang baik, kegiatan menjaga kebersihan akan menjadi lebih mudah dan konsisten untuk dilakukan setiap hari.</p>
+                                        <a href="#javascript:void(0)" class="btn btn-light btn-sm rounded-0 text-success px-3 py-2 mt-3 fw-bold">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card-wrapper">
+                                <div class="card border-0 h-100 shadow-sm text-white" style="background-color: #43814d;">
+                                    <img src="event2.jpg" class="card-img-top" alt="Event 2">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between mb-3 small">
+                        <span><i class="bi bi-geo-alt-fill"></i> Kota Surakarta</span>
+                        <span><i class="bi bi-calendar-event"></i> 10 Feb, 2023</span>
+                    </div>
+
+                                        <h5 class="card-title fw-bold" style="color: #153015;">Cara Membuat Rencana Kebersihan</h5>
+                                        <p class="card-text small opacity-75">Menyusun rencana kebersihan dapat dimulai dengan menentukan area yang perlu dibersihkan, membuat jadwal rutin, serta membagi tugas secara teratur agar lebih efektif dan efisien. Dengan perencanaan yang baik, kegiatan menjaga kebersihan akan menjadi lebih mudah dan konsisten untuk dilakukan setiap hari.</p>
+                                        <a href="#javascript:void(0)" class="btn btn-light btn-sm rounded-0 text-success px-3 py-2 mt-3 fw-bold">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card-wrapper">
+                                <div class="card border-0 h-100 shadow-sm text-white" style="background-color: #43814d;">
+                                    <img src="event3.jpg" class="card-img-top" alt="Event 3">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between mb-3 small">
+                                            <span><i class="bi bi-geo-alt-fill"></i> Kota Surabaya</span>
+                                            <span><i class="bi bi-calendar-event"></i> 10 Feb, 2023</span>
+                                        </div>
+                                        <h5 class="card-title fw-bold" style="color: #153015;">Cara Membuat Rencana Kebersihan</h5>
+                                        <p class="card-text small opacity-75">Menyusun rencana kebersihan dapat dimulai dengan menentukan area yang perlu dibersihkan, membuat jadwal rutin, serta membagi tugas secara teratur agar lebih efektif dan efisien. Dengan perencanaan yang baik, kegiatan menjaga kebersihan akan menjadi lebih mudah dan konsisten untuk dilakukan setiap hari.</p>
+                                        <a href="#javascript:void(0)" class="btn btn-light btn-sm rounded-0 text-success px-3 py-2 mt-3 fw-bold">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="card-wrapper">
+                                <div class="card border-0 h-100 shadow-sm text-white" style="background-color: #43814d;">
+                                    <img src="causes3.jpg" class="card-img-top" alt="Event 4">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between mb-3 small">
+                                            <span><i class="bi bi-geo-alt-fill"></i> Kota Makassar</span>
+                                            <span><i class="bi bi-calendar-event"></i> 10 Feb, 2023</span>
+                                        </div>
+                                        <h5 class="card-title fw-bold" style="color: #153015;">Cara Membuat Rencana Kebersihan</h5>
+                                        <p class="card-text small opacity-75">Menyusun rencana kebersihan dapat dimulai dengan menentukan area yang perlu dibersihkan, membuat jadwal rutin, serta membagi tugas secara teratur agar lebih efektif dan efisien. Dengan perencanaan yang baik, kegiatan menjaga kebersihan akan menjadi lebih mudah dan konsisten untuk dilakukan setiap hari.</p>
+                                        <a href="#javascript:void(0)" class="btn btn-light btn-sm rounded-0 text-success px-3 py-2 mt-3 fw-bold">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card-wrapper">
+                                <div class="card border-0 h-100 shadow-sm text-white" style="background-color: #43814d;">
+                                    <img src="ekosistem.jpg" class="card-img-top" alt="Event 5">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between mb-3 small">
+                                            <span><i class="bi bi-geo-alt-fill"></i> Kota Padang</span>
+                                            <span><i class="bi bi-calendar-event"></i> 30 Mar, 2023</span>
+                                        </div>
+                                        <h5 class="card-title fw-bold" style="color: #153015;">Cara Membuat Rencana Kebersihan</h5>
+                                        <p class="card-text small opacity-75">Menyusun rencana kebersihan dapat dimulai dengan menentukan area yang perlu dibersihkan, membuat jadwal rutin, serta membagi tugas secara teratur agar lebih efektif dan efisien. Dengan perencanaan yang baik, kegiatan menjaga kebersihan akan menjadi lebih mudah dan konsisten untuk dilakukan setiap hari.</p>
+                                        <a href="#javascript:void(0)" class="btn btn-light btn-sm rounded-0 text-success px-3 py-2 mt-3 fw-bold">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-none d-md-block">
+                            <div class="card-wrapper">
+                                <div class="card border-0 h-100 shadow-sm text-white" style="background-color: #43814d;">
+                                    <img src="event4.jpg" class="card-img-top" alt="Event 6">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between mb-3 small">
+                                            <span><i class="bi bi-geo-alt-fill"></i> Kota Banjarmasin</span>
+                                            <span><i class="bi bi-calendar-event"></i> 17 Feb, 2022</span>
+                                        </div>
+                                        <h5 class="card-title fw-bold" style="color: #153015;">Cara Membuat Rencana Kebersihan</h5>
+                                        <p class="card-text small opacity-75">Menyusun rencana kebersihan dapat dimulai dengan menentukan area yang perlu dibersihkan, membuat jadwal rutin, serta membagi tugas secara teratur agar lebih efektif dan efisien. Dengan perencanaan yang baik, kegiatan menjaga kebersihan akan menjadi lebih mudah dan konsisten untuk dilakukan setiap hari.</p>
+                                        <a href="#javascript:void(0)" class="btn btn-light btn-sm rounded-0 text-success px-3 py-2 mt-3 fw-bold">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5" id="news">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-success fw-bold text-uppercase" style="letter-spacing: 1px;">Latest News & Blog</h6>
+             <h2 class="py-2 px-2 text-center fs-25 fw-bold mb-5" style="color: var(--dark-green)">
+              Help Today Because Tomorrow You May be <br> The One Who Needs More Helping!
+             </h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <div class="position-relative">
+                        <img src="news1.jpg" class="card-img-top" alt="News" style="height: 240px; filter: brightness(0.8); object-fit: cover;">
+                        
+                        <div class="position-absolute bottom-0 start-0 w-100 p-2 d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <small class="text-white">
+                                <i class="bi bi-clock me-1"></i>31 Des 2007
+                            </small>
+                            <div class="d-flex gap-3">
+                                <small class="text-white">12 <i class="bi bi-heart-fill ms-1"></i></small>
+                                <small class="text-white">8 <i class="bi bi-chat-fill ms-1"></i></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body bg-white d-flex flex-column text-start">
+                        <h5 class="card-title fw-bold h6" style="color: #245124;">Save The Topic Forests</h5>
+                        <p class="card-text small mb-4 text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#javascript:void(0)" class="btn btn-success mt-auto align-self-start px-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <div class="position-relative">
+                        <img src="news2.jpg" class="card-img-top" alt="News" style="height: 240px; filter: brightness(0.8); object-fit: cover;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-2 d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <small class="text-white"><i class="bi bi-clock me-1"></i>12 Feb 2014</small>
+                            <div class="d-flex gap-3">
+                                <small class="text-white">16 <i class="bi bi-heart-fill ms-1"></i></small>
+                                <small class="text-white">7 <i class="bi bi-chat-fill ms-1"></i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column text-start">
+                        <h5 class="card-title fw-bold h6" style="color: #245124;">Save The Topic Forests</h5>
+                        <p class="card-text small mb-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#javascript:void(0)" class="btn btn-success mt-auto align-self-start px-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <div class="position-relative">
+                        <img src="news3.jpg" class="card-img-top" alt="News" style="height: 240px; filter: brightness(0.8); object-fit: cover;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-2 d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <small class="text-white"><i class="bi bi-clock me-1"></i>23 Jun 2015</small>
+                            <div class="d-flex gap-3">
+                                <small class="text-white">17 <i class="bi bi-heart-fill ms-1"></i></small>
+                                <small class="text-white">7 <i class="bi bi-chat-fill ms-1"></i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column text-start">
+                        <h5 class="card-title fw-bold h6" style="color: #245124;">Save The Topic Forests</h5>
+                        <p class="card-text small mb-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#javascript:void(0)" class="btn btn-success mt-auto align-self-start px-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                    <div class="position-relative">
+                        <img src="news4.jpg" class="card-img-top" alt="News" style="height: 240px; filter: brightness(0.8); object-fit: cover;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-2 d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <small class="text-white"><i class="bi bi-clock me-1"></i>21 Sep 2020</small>
+                            <div class="d-flex gap-3">
+                                <small class="text-white">27 <i class="bi bi-heart-fill ms-1"></i></small>
+                                <small class="text-white">11 <i class="bi bi-chat-fill ms-1"></i></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column text-start">
+                        <h5 class="card-title fw-bold h6" style="color: #245124;">Save The Topic Forests</h5>
+                        <p class="card-text small mb-4 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#javascript:void(0)" class="btn btn-success mt-auto align-self-start px-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-light" id="gallery">
+    <div class="container">
+        <h6 class="text-success fw-bold text-uppercase text-center" style="letter-spacing: 1px;">Our Work</h6>
+        <h2 class="py-2 px-2 text-center fw-bold mb-2" style="color: var(--dark-green); font-size: 25px;">
+            We Consider Environment Welfare
+        </h2>
+        <p class="text-center fs-15 mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br class="d-none d-md-block"> 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <div class="row g-0">
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="kemitraan.jpg" alt="Kemitraan">
+                    <div class="gallery-overlay">
+                        <div class="plus-icon">+</div>
+                    </div>
+                    <div class="static-text">
+                        <p class="mb-0 fw-bold">Beauty Of Life</p>
+                        <small>Our Gallery</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="causes4.jpg" alt="Cause 4">
+                    <div class="gallery-overlay">
+                        <div class="plus-icon">+</div>
+                    </div>
+                    <div class="static-text">
+                        <p class="mb-0 fw-bold">Beauty Of Life</p>
+                        <small>Our Gallery</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="event1.jpg" alt="Event 1">
+                    <div class="gallery-overlay">
+                        <div class="plus-icon">+</div>
+                    </div>
+                    <div class="static-text">
+                        <p class="mb-0 fw-bold">Beauty Of Life</p>
+                        <small>Our Gallery</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="event2.jpg" alt="Event 2">
+                    <div class="gallery-overlay">
+                        <div class="plus-icon">+</div>
+                    </div>
+                    <div class="static-text">
+                        <p class="mb-0 fw-bold">Beauty Of Life</p>
+                        <small>Our Gallery</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="news3.jpg" alt="News 3">
+                    <div class="gallery-overlay">
+                        <div class="plus-icon">+</div>
+                    </div>
+                    <div class="static-text">
+                        <p class="mb-0 fw-bold">Beauty Of Life</p>
+                        <small>Our Gallery</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-item">
+                    <img src="ekosistem.jpg" alt="Ekosistem">
+                    <div class="gallery-overlay">
+                        <div class="plus-icon">+</div>
+                    </div>
+                    <div class="static-text">
+                        <p class="mb-0 fw-bold">Beauty Of Life</p>
+                        <small>Our Gallery</small>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<section class="px-5" style="background-color: #e9f5e9; padding-top: 80px; padding-bottom: 80px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="row g-2 justify-content-center">
+                    
+                    <div class="col-5">
+                        <div class="position-relative volunteer-card shadow-sm">
+                            <img src="volunter1.jpg" class="img-fluid w-100" alt="Volunteer 1" style="aspect-ratio: 1/1; object-fit: cover;">
+                            <div class="volunteer-overlay d-flex flex-column justify-content-end align-items-center p-3 text-center">
+                                <div class="text-white">
+                                    <h6 class="fw-bold mb-0" style="font-size: 13px; text-transform: uppercase;">Michel Brown</h6>
+                                    <small style="font-size: 11px; opacity: 0.9;">Communicator</small>
+                                </div>
+                                <div class="social-icons d-flex gap-2 mt-2">
+                                    <a href="#" class="text-white small"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="text-white small"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white small"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="position-relative volunteer-card shadow-sm">
+                            <img src="volunter2.jpg" class="img-fluid w-100" alt="Volunteer 2" style="aspect-ratio: 1/1; object-fit: cover;">
+                            <div class="volunteer-overlay d-flex flex-column justify-content-end align-items-center p-3 text-center">
+                                <div class="text-white">
+                                    <h6 class="fw-bold mb-0" style="font-size: 13px; text-transform: uppercase;">Michel Brown</h6>
+                                    <small style="font-size: 11px; opacity: 0.9;">Communicator</small>
+                                </div>
+                                <div class="social-icons d-flex gap-2 mt-2">
+                                    <a href="#" class="text-white small"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="text-white small"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white small"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="position-relative volunteer-card shadow-sm">
+                            <img src="volunter3.jpg" class="img-fluid w-100" alt="Volunteer 3" style="aspect-ratio: 1/1; object-fit: cover;">
+                            <div class="volunteer-overlay d-flex flex-column justify-content-end align-items-center p-3 text-center">
+                                <div class="text-white">
+                                    <h6 class="fw-bold mb-0" style="font-size: 13px; text-transform: uppercase;">Michel Brown</h6>
+                                    <small style="font-size: 11px; opacity: 0.9;">Communicator</small>
+                                </div>
+                                <div class="social-icons d-flex gap-2 mt-2">
+                                    <a href="#" class="text-white small"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="text-white small"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white small"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="position-relative volunteer-card shadow-sm">
+                            <img src="volunter4.jpg" class="img-fluid w-100" alt="Volunteer 4" style="aspect-ratio: 1/1; object-fit: cover;">
+                            <div class="volunteer-overlay d-flex flex-column justify-content-end align-items-center p-3 text-center">
+                                <div class="text-white">
+                                    <h6 class="fw-bold mb-0" style="font-size: 13px; text-transform: uppercase;">Michel Brown</h6>
+                                    <small style="font-size: 11px; opacity: 0.9;">Communicator</small>
+                                </div>
+                                <div class="social-icons d-flex gap-2 mt-2">
+                                    <a href="#" class="text-white small"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="text-white small"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-white small"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+                <h6 class="text-success text-uppercase fw-bold" style="font-size: 14px;">Become a Volunteer?</h6>
+                <h2 class="fw-bold mb-3" style="color: #1a331a;">Kami Peduli terhadap Kesejahteraan Lingkungan</h2>
+                <p class="text-muted small mb-4">
+                    Kami berkomitmen untuk menjaga keseimbangan alam melalui tindakan nyata seperti mengurangi limbah, menghemat sumber daya, serta mendukung berbagai upaya pelestarian lingkungan. Dengan kesadaran dan kerja sama, kami berusaha menciptakan lingkungan yang bersih, sehat, dan berkelanjutan bagi semua.
+                </p>
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-2 small"><i class="fas fa-check text-success me-2"></i>✅ Kami bersahabat satu sama lain.</li>
+                    <li class="mb-2 small"><i class="fas fa-check text-success me-2"></i>✅ Jika Anda bergabung dengan kami, kami akan memberikan pelatihan gratis kepada Anda.</li>
+                    <li class="mb-2 small"><i class="fas fa-check text-success me-2"></i>✅ Ini adalah kesempatan untuk membantu lingkungan yang miskin.</li>
+                    <li class="mb-2 small"><i class="fas fa-check text-success me-2"></i>✅ Tidak ada tujuan persyaratan.</li>
+                    <li class="mb-2 small"><i class="fas fa-check text-success me-2"></i>✅ Bergabung sepenuhnya gratis. Kami tidak membutuhkan uang sepeser pun dari Anda.</li>
+                </ul>
+                <a href="javascript:void(0)" class="btn btn-success px-4 py-2 fw-bold" style="background-color: #2d5a27; border: none;">Join With Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="py-5 text-light" style="background-color: #1a1a1a;">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold mb-4">Newsletter</h5>
+        <p class="text-secondary small mb-4">
+          Dolor amet sit justo amet elit clita ipsum elit est Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div class="d-flex align-items-center bg-white p-1" style="border-radius: 2px;">
+          <input type="email" class="form-control border-0 shadow-none small" placeholder="Enter your email" style="background: transparent;">
+          <button class="btn btn-success fw-bold btn-sm px-3" style="background-color: #5cb85c; border: none; border-radius: 2px;">Signup</button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-lg-flex justify-content-center">
+        <div>
+          <h5 class="fw-bold mb-4">Our Services</h5>
+          <ul class="list-unstyled text-secondary small">
+            <li class="mb-2">▶ Ocean Turtle</li>
+            <li class="mb-2">▶ White Tiger</li>
+            <li class="mb-2">▶ Social Ecology</li>
+            <li class="mb-2">▶ Loneliness</li>
+            <li class="mb-2">▶ Beauty of Life</li>
+            <li class="mb-2">▶ Present for You</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-lg-flex justify-content-center">
+        <div>
+          <h5 class="fw-bold mb-4">Volunteer</h5>
+          <ul class="list-unstyled text-secondary small">
+            <li class="mb-2">▶ Tegar Bintang</li>
+            <li class="mb-2">▶ Tegar Bintang</li>
+            <li class="mb-2">▶ Tegar Bintang</li>
+            <li class="mb-2">▶ Tegar Bintang</li>
+            <li class="mb-2">▶ Tegar Bintang</li>
+            <li class="mb-2">▶ Tegar Bintang</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" id="contact">
+        <h5 class="fw-bold mb-4">Our Gallery</h5>
+        <div class="row g-2" style="max-width: 300px;"> <div class="col-4"><img src="news4.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div class="col-4"><img src="event4.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div class="col-4"><img src="event3.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div class="col-4"><img src="event2.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div class="col-4"><img src="event1.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;"></div>
+          <div class="col-4"><img src="causes3.jpg" class="img-fluid" style="aspect-ratio: 1/1; object-fit: cover;"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.1);">
+
+    <div class="row align-items-center text-secondary small">
+      <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+        <span class="text-success">🍃</span> <strong>Environs</strong> &copy; 2026
+      </div>
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+        <div class="d-flex justify-content-center gap-3">
+          <i class="bi bi-facebook"></i> <i class="bi bi-twitter"></i> <i class="bi bi-instagram"></i> <i class="bi bi-pinterest"></i> <i class="bi bi-linkedin"></i>
+        </div>
+      </div>
+      <div class="col-md-4 text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+          <i class="bi bi-heart-fill"></i> <i class="bi bi-twitter"></i> <i class="bi bi-globe"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+    const cards = document.querySelectorAll('.card-container');
+
+    cards.forEach(card => {
+      const img = card.querySelector('.img-zoom');
+    
+      card.addEventListener('mouseenter', () => {
+        img.classList.add('zoomed');
+      });
+    
+      card.addEventListener('mouseleave', () => {
+        img.classList.remove('zoomed');
+      });
+    });
+    
+    document.querySelectorAll('.volunteer-card').forEach(card => {
+        card.addEventListener('click', function() {
+            document.querySelectorAll('.volunteer-card').forEach(c => {
+                if (c !== card) c.classList.remove('active');
+            });
+            this.classList.toggle('active');
+        });
+    });
+    </script>
+    <script src="script3.js"></script>
+    <a href="index.html" class="btn-kembali-fixed">
+  <i class="bi bi-arrow-left"></i> Kembali
+</a>
+
+</body>
+</html>
