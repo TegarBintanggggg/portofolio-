@@ -19,7 +19,12 @@
       <li><a href="#skill">Skill</a></li>
       <li><a href="#project">Projek</a></li>
     </ul>
-    <a href="#contact" class="btn-contact-nav">Contact Me</a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode">
+        <i class="fas fa-sun" id="themeIcon"></i>
+      </button>
+      <a href="#contact" class="btn-contact-nav">Contact Me</a>
+    </div>
     <div class="hamburger" id="hamburger">
       <span></span><span></span><span></span>
     </div>
@@ -57,7 +62,7 @@
         This is my first experience in the world of software engineering, and I am excited to learn, grow, and<br/>
         continuously improve my skills in this field.
       </p>
-      <a href="rte.png"  class="btn-outline">Recount Text</a>
+      <a href="rte.png" class="btn-outline">Recount Text</a>
     </div>
   </section>
 
@@ -111,50 +116,75 @@
       <div class="project-card">
         <div class="project-img">
           <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&h=220&fit=crop" alt="Eco Produk"/>
+          <div class="project-overlay">
+            <a href="index1.html" class="overlay-btn">Lihat Project →</a>
+          </div>
         </div>
         <div class="project-info">
-          <h3>Eco Produk</h3>
-          <p>Waste utilization</p>
+          <div class="project-text">
+            <h3>Eco Produk</h3>
+            <p>Waste utilization</p>
+          </div>
           <a href="index1.html" class="project-btn"><i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="project-card">
         <div class="project-img">
           <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=220&fit=crop" alt="School Website"/>
+          <div class="project-overlay">
+            <a href="index2.html" class="overlay-btn">Lihat Project →</a>
+          </div>
         </div>
         <div class="project-info">
-          <h3>School Website</h3>
-          <p>School Introduction</p>
+          <div class="project-text">
+            <h3>School Website</h3>
+            <p>School Introduction</p>
+          </div>
           <a href="index2.html" class="project-btn"><i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="project-card">
         <div class="project-img">
           <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=400&h=220&fit=crop" alt="Environment"/>
+          <div class="project-overlay">
+            <a href="index3.html" class="overlay-btn">Lihat Project →</a>
+          </div>
         </div>
         <div class="project-info">
-          <h3>Environment</h3>
-          <p>Nature donation website</p>
+          <div class="project-text">
+            <h3>Environment</h3>
+            <p>Nature donation website</p>
+          </div>
           <a href="index3.html" class="project-btn"><i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="project-card">
         <div class="project-img">
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=220&fit=crop" alt="Business Education"/>
+          <div class="project-overlay">
+            <a href="index4.html" class="overlay-btn">Lihat Project →</a>
+          </div>
         </div>
         <div class="project-info">
-          <h3>Business Education</h3>
-          <p>Business education website</p>
+          <div class="project-text">
+            <h3>Business Education</h3>
+            <p>Business education website</p>
+          </div>
           <a href="index4.html" class="project-btn"><i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="project-card">
         <div class="project-img">
           <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=400&h=220&fit=crop" alt="Festival Website"/>
+          <div class="project-overlay">
+            <a href="index5.html" class="overlay-btn">Lihat Project →</a>
+          </div>
         </div>
         <div class="project-info">
-          <h3>Festival Website</h3>
-          <p>Information about festivals</p>
+          <div class="project-text">
+            <h3>Festival Website</h3>
+            <p>Information about festivals</p>
+          </div>
           <a href="index5.html" class="project-btn"><i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
@@ -163,52 +193,71 @@
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <div class="section-header">
-      <h2>Get In Touch</h2>
-      <span class="section-sub">Let's work together</span>
-    </div>
-    <div class="contact-form">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" placeholder="Full Name" />
+    <div class="contact-wrapper">
+      <!-- KIRI: form -->
+      <div class="contact-left">
+        <div class="section-header" style="text-align:left; margin-bottom:36px;">
+          <h2>Get In Touch</h2>
+          <span class="section-sub">Let's work together</span>
+        </div>
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Full Name" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="example@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Service</label>
+            <select>
+              <option value="" disabled selected>Select a service</option>
+              <option>Web Design</option>
+              <option>Web Development</option>
+              <option>UI/UX Design</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message here..."></textarea>
+          </div>
+          <button class="btn-submit" id="submitBtn">Get In Touch</button>
+        </div>
       </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" placeholder="example@email.com" />
+      <!-- KANAN: info -->
+      <div class="contact-right">
+        <p class="contact-info-label">Or reach me directly</p>
+        <a href="#" class="contact-info-box">
+          <i class="fas fa-envelope"></i>
+          <span>byntanksaha@gmail.com</span>
+        </a>
+        <a href="#" class="contact-info-box">
+          <i class="fas fa-phone"></i>
+          <span>+62 838-4763-8870</span>
+        </a>
+        <div class="contact-info-box no-hover">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Tengaran, Central Java, Indonesia</span>
+        </div>
       </div>
-      <div class="form-group">
-        <label>Service</label>
-        <select>
-          <option value="" disabled selected>Select a service</option>
-          <option>Web Design</option>
-          <option>Web Development</option>
-          <option>UI/UX Design</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea rows="5" placeholder="Write your message here..."></textarea>
-      </div>
-      <button class="btn-submit" id="submitBtn">Get In Touch</button>
     </div>
   </section>
-  
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-left">
-      <h2>Let's<br/>Work Together -</h2>
-    </div>
-    <div class="footer-right">
-      <a href="mailto:byntanksaha@gmail.com" class="footer-email">
-        <i class="fas fa-envelope"></i> byntanksaha@gmail.com
-      </a>
-      <div class="footer-socials">
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+    <div class="footer-top">
+      <div class="footer-left">
+        <h2>Let's<br/>Work Together -</h2>
+      </div>
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -218,4 +267,4 @@
 
   <script src="script.js"></script>
 </body>
-</html>
+  </html>
